@@ -6,9 +6,20 @@ import {
 } from "next/font/google";
 import "./globals.css";
 
-const bsst = Big_Shoulders_Stencil_Text({ subsets: ["latin"] });
-const bst = Big_Shoulders_Text({ subsets: ["latin"] });
-const antonio = Antonio({ subsets: ["latin"] });
+const bsst = Big_Shoulders_Stencil_Text({
+	subsets: ["latin"],
+	variable: "--bsst",
+});
+
+const bst = Big_Shoulders_Text({
+	subsets: ["latin"],
+	variable: "--bst",
+});
+
+const antonio = Antonio({
+	subsets: ["latin"],
+	variable: "--antonio",
+});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -23,7 +34,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={[bsst.className, bst.className, antonio.className].join(" ")}
+				className={[bsst.variable, bst.variable, antonio.variable].join(" ")}
 			>
 				{children}
 			</body>

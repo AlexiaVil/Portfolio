@@ -1,0 +1,35 @@
+.heading {
+	display: block;
+}
+
+.h1,
+.h2,
+.h3 {
+	font-family: var(--bsst), sans-serif;
+	font-weight: var(--semi-bold);
+}
+
+.h1 {
+	font-size: 6rem;
+	line-height: 117%;
+	letter-spacing: 0.3125rem;
+}
+
+.h2 {
+	font-size: 5rem;
+	line-height: 138%;
+	letter-spacing: 0.25rem;
+}
+
+.h3 {
+	font-size: 2.5rem;
+	letter-spacing: 0.125rem;
+}
+
+.h4 {
+	font-size: 1rem;
+	letter-spacing: 0.08rem;
+	font-family: var(--antonio), sans-serif;
+	font-weight: var(--regular);
+	color: var(--blue);
+}
