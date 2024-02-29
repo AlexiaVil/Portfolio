@@ -12,6 +12,8 @@
   --yellow: #ffff82;
   --yellow-light: #ffffd8;
   --yellow-dark: #252422;
+
+  --max-width: 1300px;
 }
 
 * {
