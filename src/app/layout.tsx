@@ -5,6 +5,7 @@ import {
 	Antonio,
 } from "next/font/google";
 import "./globals.css";
+import Header from "@/layout/Header/Header";
 
 const bsst = Big_Shoulders_Stencil_Text({
 	subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
 			<body
 				className={[bsst.variable, bst.variable, antonio.variable].join(" ")}
 			>
+				<Header />
 				{children}
 			</body>
 		</html>
