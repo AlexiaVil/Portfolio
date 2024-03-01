@@ -1,0 +1,7 @@
+.shape {
+	position: absolute;
+	top: 50px;
+	left: -400px;
+	z-index: -1;
+	pointer-events: none;
+}
