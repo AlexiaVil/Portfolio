@@ -1,6 +1,6 @@
 import { LogoIcon } from "@/components/icons";
-import Link from "@/components/Link/Link";
 import styles from "./Header.module.css";
+import Nav from "./Nav/Nav";
 
 const Header = () => {
 	return (
@@ -9,10 +9,7 @@ const Header = () => {
 				<LogoIcon className={styles.logo} />
 				<span className={styles.name}>Alexia Villiez</span>
 			</span>
-			<nav className={styles.nav}>
-				<Link href="#projets">Projets</Link>
-				<Link href="#contact">Contact</Link>
-			</nav>
+			<Nav />
 		</header>
 	);
 };

@@ -1,5 +1,3 @@
-import Tag from "@/components/Tag/Tag";
-
-import { Home } from "./Home";
+import { Home } from "@/pages/Home/Home";
 
 export default Home;

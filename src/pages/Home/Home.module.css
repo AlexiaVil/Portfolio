@@ -1,0 +1,56 @@
+.page {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.intro {
+	width: 50%;
+	margin: 475px 0 525px auto;
+}
+
+.introText {
+	margin-top: 2rem;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 19rem 0 10.75rem;
+}
+
+.contactText {
+	width: 50%;
+	margin: 2rem 0;
+}
+
+@media (max-width: 1000px) {
+	.intro {
+		width: 60%;
+	}
+}
+
+@media (max-width: 875px) {
+	.intro {
+		width: 70%;
+	}
+}
+
+@media (max-width: 740px) {
+	.intro {
+		width: 75%;
+	}
+}
+
+@media (max-width: 600px) {
+	.intro,
+	.contact {
+		width: 100%;
+		margin: 4.5rem 0;
+	}
+
+	.contactText {
+		width: 100%;
+	}
+}

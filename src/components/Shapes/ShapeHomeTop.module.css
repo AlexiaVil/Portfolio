@@ -1,0 +1,28 @@
+.shape {
+	position: absolute;
+	top: -50px;
+	left: -400px;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.shapeBottom,
+.shapeBottomFilled {
+	position: absolute;
+	bottom: 0;
+	right: -500px;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.shapeBottom {
+	bottom: -100px;
+}
+
+@media (max-width: 600px) {
+	.shape,
+	.shapeBottom,
+	.shapeBottomFilled {
+		display: none;
+	}
+}

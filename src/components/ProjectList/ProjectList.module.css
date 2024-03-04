@@ -1,0 +1,50 @@
+.projects {
+	padding-top: 75px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 170px;
+}
+
+.projectsLeft,
+.projectsRight {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.projectsLeft {
+	align-items: flex-end;
+}
+
+.projectsRight {
+	align-items: flex-start;
+	margin-top: 360px;
+}
+
+@media (max-width: 1200px) {
+	.projects {
+		max-width: var(--small-max-width);
+		margin: 0 auto;
+	}
+
+	.projectsDesktop {
+		display: none;
+	}
+
+	.projectsLeft {
+		align-items: flex-start;
+	}
+}
+
+@media (min-width: 1201px) {
+	.projectsMobile {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.projects {
+		padding-top: 0;
+	}
+}
