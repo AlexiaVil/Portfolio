@@ -24,11 +24,15 @@
 	gap: 20px;
 }
 
-.copy,
-.symbol {
-	font-family: var(--bst), sans-serif;
+.copy {
+	font-size: 0.8rem;
 }
 
 .symbol {
-	font-size: 1.25rem;
+	font-size: 1rem;
+}
+
+.copy,
+.symbol {
+	font-family: var(--bst), sans-serif;
 }

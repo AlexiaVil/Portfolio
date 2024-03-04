@@ -6,18 +6,17 @@ import styles from "./ShapeHomeTop.module.css";
 import { applyPointTransform, lerp } from "./utils";
 import { useWindowSize } from "@/hooks/useWindowSize";
 
-let dJoinPos = "553.041 842.334";
+let dJoinPos = "897.663 456.817";
 let d =
-	"450.607 879.196 409.249 1054 301.315 1039.84C201.707 1026.77 196.122 875.844 145.823 788.913C104.294 717.14 49.0468 654.686 31.559 573.631C12.7671 486.531 -18.0358 376.993 42.9219 311.973C107.77 242.803 239.577 321.06 318.133 267.959C405.301 209.037 387.758 38.4694 489.147 10.3397C580.733 -15.0705 647.955 103.869 728.645 154.065C814.398 207.411 958.208 215.682 978.304 314.638C999.754 420.261 846.428 483.529 816.586 587.104C791.633 673.717 888.266 789.208 823.506 851.925C757.367 915.977 639.681 811.156";
+	"938.132 565.785 1125.22 608.045 1111.27 723.44C1098.4 829.932 937.314 837.533 845.045 892.18C768.864 937.299 702.782 996.964 616.43 1016.51C523.638 1037.52 407.019 1071.6 336.936 1007.22C262.38 938.735 344.505 797.156 286.957 713.859C223.1 621.43 41.1767 642.011 10.0426 534.064C-18.0814 436.554 108.18 363.491 160.898 276.795C216.925 184.657 224.196 31.023 329.632 8.49299C442.172 -15.5551 511.386 147.464 622.297 178.201C715.043 203.904 837.304 99.4758 904.968 167.939C974.074 237.861 863.434 364.651";
 
 const ShapeHomeTop = (props: SVGProps<SVGSVGElement>) => {
 	const ref = useRef<SVGPathElement | null>(null);
-
 	const [x] = useWindowSize();
 
 	const rawProgress = Math.max(0, x - 600) / 1200;
 	const progress = Math.max(0, Math.min(1, rawProgress));
-	const leftTranslate = lerp(-750, 0, progress);
+	const leftTranslate = lerp(750, 0, progress);
 
 	useAnimationFrame((ts) => {
 		if (
@@ -61,16 +60,16 @@ const ShapeHomeTop = (props: SVGProps<SVGSVGElement>) => {
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
-			width="1287"
-			height="1247"
-			viewBox="-100 -100 1187 1247"
-			className={styles.shape}
+			width="1319"
+			height="1251"
+			viewBox="-100 -100 1219 1351"
+			className={styles.shapeBottom}
 			style={{ transform: `translateX(${leftTranslate}px)` }}
 			{...props}
 		>
 			<path
 				ref={ref}
-				stroke="#CDE6F5"
+				stroke="#09BC8A"
 				strokeWidth={12}
 				d={d}
 				clipRule="evenodd"

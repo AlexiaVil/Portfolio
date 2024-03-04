@@ -11,26 +11,33 @@
 }
 
 .h1 {
-	font-size: 6rem;
-	line-height: 117%;
+	font-size: 4.8rem;
+	line-height: 87%;
 	letter-spacing: 0.3125rem;
 }
 
 .h2 {
-	font-size: 5rem;
+	font-size: 4rem;
 	line-height: 138%;
 	letter-spacing: 0.25rem;
 }
 
 .h3 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	letter-spacing: 0.125rem;
 }
 
 .h4 {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	letter-spacing: 0.08rem;
 	font-family: var(--antonio), sans-serif;
 	font-weight: var(--regular);
 	color: var(--blue);
+	text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+	.h1 {
+		font-size: 4rem;
+	}
 }

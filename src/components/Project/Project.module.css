@@ -1,0 +1,66 @@
+.project {
+	max-width: 30rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.project:not(:last-child) {
+	margin-bottom: 9.25rem;
+}
+
+.right {
+	align-items: flex-end;
+	text-align: right;
+}
+
+.imageContainer {
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.image {
+	object-fit: cover;
+	border-radius: 1rem;
+}
+
+.landscape {
+	width: 100%;
+	max-width: 480px;
+	height: 315px;
+}
+
+.portrait {
+	width: 100%;
+	max-width: 315px;
+	height: 480px;
+}
+
+.link {
+	font-family: var(--bsst);
+	font-size: 3rem;
+	text-decoration: none;
+	color: var(--white);
+	text-transform: uppercase;
+	transition: all 150ms ease;
+	line-height: 1;
+	margin-bottom: 0.1875rem;
+}
+
+.link:hover {
+	color: var(--orange);
+}
+
+.subtitle {
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+	.project:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+
+	.right {
+		align-self: flex-end;
+	}
+}
