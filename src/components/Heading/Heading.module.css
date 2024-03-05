@@ -19,12 +19,14 @@
 .h2 {
 	font-size: 4rem;
 	line-height: 138%;
-	letter-spacing: 0.25rem;
+	letter-spacing: 0.2rem;
 }
 
 .h3 {
 	font-size: 2rem;
 	letter-spacing: 0.125rem;
+	font-family: var(--bst), sans-serif;
+	font-weight: var(--regular);
 }
 
 .h4 {
@@ -39,5 +41,10 @@
 @media (max-width: 768px) {
 	.h1 {
 		font-size: 4rem;
+	}
+
+	.h2 {
+		font-size: 3.2rem;
+		letter-spacing: 0.128rem;
 	}
 }

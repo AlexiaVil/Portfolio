@@ -14,8 +14,9 @@
 	--yellow-dark: #252422;
 
 	/* Sizes */
-	--max-width: 1300px;
+	--max-width: 1330px;
 	--small-max-width: 768px;
+	--page-top-padding: 6.5rem;
 
 	/* Fonts */
 	--light: 300;
@@ -52,7 +53,7 @@ body {
 }
 
 p {
-	letter-spacing: 0.07rem;
+	letter-spacing: 0.02rem;
 	line-height: 143%;
 }
 
