@@ -8,7 +8,7 @@ const Nav = () => {
 	const pathname = usePathname();
 	const isHome = pathname === `${process.env.basePath}/`;
 	const getLink = (href: string) => {
-		return isHome ? `${process.env.basePath}${href}` : href;
+		return isHome ? href : `${process.env.basePath}/${href}`;
 	};
 
 	const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
