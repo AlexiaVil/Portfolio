@@ -25,3 +25,9 @@
 	position: relative;
 	top: -1px;
 }
+
+@media (max-width: 499px) {
+	.name {
+		display: none;
+	}
+}
