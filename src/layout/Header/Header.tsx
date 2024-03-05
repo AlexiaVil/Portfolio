@@ -5,10 +5,10 @@ import Nav from "./Nav/Nav";
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<span className={styles.headerSlot}>
+			<a href="/" className={styles.headerSlot}>
 				<LogoIcon className={styles.logo} />
 				<span className={styles.name}>Alexia Villiez</span>
-			</span>
+			</a>
 			<Nav />
 		</header>
 	);

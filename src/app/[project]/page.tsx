@@ -10,6 +10,7 @@ export default function Page({
 }: {
 	params: { project: string };
 }) {
+	const getImageLink = (image: string) => `${process.env.basePath}${image}`;
 	const projectData: ProjectData | undefined = projects.find(
 		(p) => p.url === project,
 	);
@@ -29,7 +30,7 @@ export default function Page({
 						alt={projectData.title}
 						fill
 						className={styles.image}
-						src={image}
+						src={getImageLink(image)}
 					/>
 				</div>
 			))}
@@ -71,7 +72,7 @@ export default function Page({
 							)}
 						>
 							<Image
-								src={screenshot.left.image}
+								src={getImageLink(screenshot.left.image)}
 								fill
 								className={styles.image}
 								alt={""}
@@ -99,7 +100,7 @@ export default function Page({
 							)}
 						>
 							<Image
-								src={screenshot.right.image}
+								src={getImageLink(screenshot.right.image)}
 								fill
 								className={styles.image}
 								alt={""}

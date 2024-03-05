@@ -21,6 +21,7 @@ const Project = ({
 	align,
 }: ProjectProps) => {
 	const { title, description, image } = list;
+	const getImageLink = (image: string) => `${process.env.basePath}${image}`;
 
 	return (
 		<div
@@ -34,7 +35,12 @@ const Project = ({
 					format === "portrait" ? styles.portrait : styles.landscape,
 				].join(" ")}
 			>
-				<Image src={image} alt={title} fill={true} className={styles.image} />
+				<Image
+					src={getImageLink(image)}
+					alt={title}
+					fill={true}
+					className={styles.image}
+				/>
 			</div>
 			<Heading variant="h4" className={styles.subtitle}>
 				{year} - {longTitle}
