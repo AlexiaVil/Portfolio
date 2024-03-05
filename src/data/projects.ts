@@ -1,4 +1,15 @@
 export type ProjectFormat = "landscape" | "portrait";
+export type ProjectScreenshot = {
+	media?: {
+		type: "image" | "video";
+		src: string | string[];
+		alt: string;
+	};
+	description?: {
+		title: string;
+		text: string;
+	};
+};
 
 export interface ProjectData {
 	list: {
@@ -17,20 +28,8 @@ export interface ProjectData {
 	collab: string;
 	tags: string[];
 	screenshots: {
-		left: {
-			image?: string;
-			description?: {
-				title: string;
-				text: string;
-			};
-		};
-		right: {
-			image?: string;
-			description?: {
-				title: string;
-				text: string;
-			};
-		};
+		left: ProjectScreenshot;
+		right: ProjectScreenshot;
 	}[];
 }
 
@@ -59,11 +58,15 @@ export const projects: ProjectData[] = [
 		screenshots: [
 			{
 				left: {
-					image: "/projects/_placeholder/169.png",
+					media: {
+						type: "image",
+						src: "/projects/_placeholder/169.png",
+						alt: "Accents d'Amérique",
+					},
 				},
 				right: {
 					description: {
-						title: "Une carte interactive - Accents d'Amérique.",
+						title: "Une carte interactive - Accents d'Amérique",
 						text: "Le but, faire glisser des cartes personnages sur leur provenance géographique en Amérique du Nord, dans un temps imparti.",
 					},
 				},
@@ -76,7 +79,14 @@ export const projects: ProjectData[] = [
 					},
 				},
 				right: {
-					image: "/projects/_placeholder/169.png",
+					media: {
+						type: "video",
+						src: [
+							"/projects/_placeholder/169.mp4",
+							"/projects/_placeholder/169.webm",
+						],
+						alt: "Vite sur tes patins!",
+					},
 				},
 			},
 		],
@@ -105,7 +115,11 @@ export const projects: ProjectData[] = [
 		screenshots: [
 			{
 				left: {
-					image: "/projects/_placeholder/169.png",
+					media: {
+						type: "image",
+						src: "/projects/_placeholder/169.png",
+						alt: "Accents d'Amérique",
+					},
 				},
 				right: {
 					description: {
@@ -122,7 +136,14 @@ export const projects: ProjectData[] = [
 					},
 				},
 				right: {
-					image: "/projects/_placeholder/169.png",
+					media: {
+						type: "video",
+						src: [
+							"/projects/_placeholder/169.mp4",
+							"/projects/_placeholder/169.webm",
+						],
+						alt: "Vite sur tes patins!",
+					},
 				},
 			},
 		],
