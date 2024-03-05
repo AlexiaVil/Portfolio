@@ -87,7 +87,8 @@
 	font-family: var(--bst);
 }
 
-.screenshotImage {
+.screenshotImage,
+.screenshotVideo {
 	position: relative;
 	aspect-ratio: 16 / 9;
 	flex: 1 1 50%;
@@ -95,8 +96,19 @@
 	max-height: 18.5rem;
 }
 
+.screenshotVideo {
+	width: 100%;
+	border-radius: 0.8rem;
+	object-fit: contain;
+}
+
 .screenshotText {
-	flex: 1 1 50%;
+	flex: 1 0 50%;
+}
+
+.video {
+	border-radius: 0.8rem;
+	object-fit: contain;
 }
 
 .buttons {
@@ -171,7 +183,8 @@
 		max-width: 20rem;
 	}
 
-	.screenshotImage {
+	.screenshotImage,
+	.screenshotVideo {
 		width: 100%;
 		max-width: 20rem;
 	}

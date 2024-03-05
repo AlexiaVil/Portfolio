@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ProjectData, projects } from "@/data/projects";
+import { ProjectData, ProjectScreenshot, projects } from "@/data/projects";
 import styles from "./ProjectPage.module.css";
 import Heading from "@/components/Heading/Heading";
 import Tag from "@/components/Tag/Tag";
@@ -24,8 +24,8 @@ export default function Page({
 
 	const Hero = ({ className }: { className: string }) => (
 		<div className={[styles.hero, className].join(" ")}>
-			{projectData.hero.map((image) => (
-				<div key={image} className={styles.imageContainer}>
+			{projectData.hero.map((image, i) => (
+				<div key={`${image}${i}`} className={styles.imageContainer}>
 					<Image
 						alt={projectData.title}
 						fill
@@ -65,62 +65,6 @@ export default function Page({
 			</div>
 			<div className={styles.gallery}>
 				{projectData.screenshots.map((screenshot, i) => {
-					const left = screenshot.left.image ? (
-						<div
-							className={[styles.screenshotImage, styles.screenshotLeft].join(
-								" ",
-							)}
-						>
-							<Image
-								src={getImageLink(screenshot.left.image)}
-								fill
-								className={styles.image}
-								alt={""}
-							/>
-						</div>
-					) : (
-						<div
-							className={[styles.screenshotText, styles.screenshotLeft].join(
-								" ",
-							)}
-						>
-							<span className={styles.screenshotTitle}>
-								{screenshot.left.description?.title}
-							</span>
-							<p className={styles.screenshotDescription}>
-								{screenshot.left.description?.text}
-							</p>
-						</div>
-					);
-
-					const right = screenshot.right.image ? (
-						<div
-							className={[styles.screenshotImage, styles.screenshotRight].join(
-								" ",
-							)}
-						>
-							<Image
-								src={getImageLink(screenshot.right.image)}
-								fill
-								className={styles.image}
-								alt={""}
-							/>
-						</div>
-					) : (
-						<div
-							className={[styles.screenshotText, styles.screenshotRight].join(
-								" ",
-							)}
-						>
-							<span className={styles.screenshotTitle}>
-								{screenshot.right.description?.title}
-							</span>
-							<p className={styles.screenshotDescription}>
-								{screenshot.right.description?.text}
-							</p>
-						</div>
-					);
-
 					return (
 						<div
 							key={i}
@@ -129,8 +73,8 @@ export default function Page({
 								i % 2 !== 0 ? styles.reverse : "",
 							].join(" ")}
 						>
-							{left}
-							{right}
+							{generateScreenshotBlock(screenshot.left, "left")}
+							{generateScreenshotBlock(screenshot.right, "right")}
 						</div>
 					);
 				})}
@@ -153,6 +97,60 @@ export default function Page({
 			</div>
 		</div>
 	);
+}
+
+function generateScreenshotBlock(
+	screenshot: ProjectScreenshot,
+	side: "left" | "right",
+) {
+	const getImageLink = (image: string) => `${process.env.basePath}${image}`;
+	const sideClass =
+		side === "left" ? styles.screenshotLeft : styles.screenshotRight;
+
+	console.log(screenshot);
+	if (screenshot.media) {
+		if (screenshot.media.type === "image") {
+			return (
+				<div className={[styles.screenshotImage, sideClass].join(" ")}>
+					<Image
+						src={getImageLink(screenshot.media.src as string)}
+						fill
+						className={styles.image}
+						alt={screenshot.media.alt}
+					/>
+				</div>
+			);
+		} else {
+			return (
+				<video
+					className={[styles.screenshotVideo, sideClass].join(" ")}
+					autoPlay
+					loop
+					muted
+					playsInline
+				>
+					{(screenshot.media.src as Array<string>).map((src: string) => (
+						<source
+							key={src}
+							src={getImageLink(src)}
+							type={`video/${src.split(".")[1]}`}
+						/>
+					))}
+				</video>
+			);
+		}
+	} else {
+		return (
+			<div className={[styles.screenshotText, sideClass].join(" ")}>
+				<span className={styles.screenshotTitle}>
+					{screenshot.description?.title}
+				</span>
+				<p className={styles.screenshotDescription}>
+					{screenshot.description?.text}
+				</p>
+			</div>
+		);
+	}
 }
 
 export async function generateStaticParams() {
