@@ -40,7 +40,7 @@ export const projects: ProjectData[] = [
 			format: "portrait",
 			title: "Exposition Interactive",
 			description:
-				"Une exposition ludique éphémère sur la langue française au Québec et en Amérique du Nord.",
+				"Une exposition ludique éphémère sur la langue française au Québec et en Amérique du Nord.",
 			image: "/projects/_placeholder/500.png",
 		},
 		url: "le-francais-une-langue-a-celebrer",
@@ -86,7 +86,7 @@ export const projects: ProjectData[] = [
 			format: "portrait",
 			title: "Exposition Interactive",
 			description:
-				"Une exposition ludique éphémère sur la langue française au Québec et en Amérique du Nord.",
+				"Une exposition ludique éphémère sur la langue française au Québec et en Amérique du Nord.",
 			image: "/projects/_placeholder/500.png",
 		},
 		url: "le-francais-une-langue-a-celebrer-2",
