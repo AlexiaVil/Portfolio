@@ -2,29 +2,26 @@ import Image from "next/image";
 import styles from "./Project.module.css";
 import Heading from "../Heading/Heading";
 import Link from "next/link";
+import { ProjectData } from "@/data/projects";
 
 export type ProjectFormat = "landscape" | "portrait";
 export type Alignment = "left" | "right";
 
-export interface ProjectProps {
-	format: ProjectFormat;
+export interface ProjectProps extends ProjectData {
 	align: Alignment;
-	url: string;
-	title: string;
-	subtitle: string;
-	description: string;
-	image: string;
+	format: ProjectFormat;
 }
 
 const Project = ({
-	format,
-	title,
-	subtitle,
-	description,
-	image,
-	align,
+	year,
+	title: longTitle,
 	url,
+	list,
+	format,
+	align,
 }: ProjectProps) => {
+	const { title, description, image } = list;
+
 	return (
 		<div
 			className={[styles.project, align === "right" ? styles.right : ""].join(
@@ -40,7 +37,7 @@ const Project = ({
 				<Image src={image} alt={title} fill={true} className={styles.image} />
 			</div>
 			<Heading variant="h4" className={styles.subtitle}>
-				{subtitle}
+				{year} - {longTitle}
 			</Heading>
 			<Link href={url} className={styles.link}>
 				{title}

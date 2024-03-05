@@ -12,6 +12,16 @@
 	text-decoration: none;
 }
 
+.disabled {
+	pointer-events: none;
+	color: var(--yellow-dark);
+	border-color: var(--yellow-dark);
+}
+
+.disabled > svg > path {
+	stroke: var(--yellow-dark);
+}
+
 .button:hover,
 .button:focus {
 	background-color: var(--yellow);
