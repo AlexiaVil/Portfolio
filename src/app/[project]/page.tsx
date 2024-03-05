@@ -21,8 +21,6 @@ export default function Page({
 	const previousProject = projects[projectData.index - 1]?.url;
 	const nextProject = projects[projectData.index + 1]?.url;
 
-	console.log(previousProject, nextProject);
-
 	const Hero = ({ className }: { className: string }) => (
 		<div className={[styles.hero, className].join(" ")}>
 			{projectData.hero.map((image) => (

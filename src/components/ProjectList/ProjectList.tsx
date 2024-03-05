@@ -16,7 +16,14 @@ const DesktopProjectList = () => (
 		<div className={styles.projectsLeft}>
 			{projects.flatMap((project: ProjectData, i: number) => {
 				if (i % 2 === 0) {
-					return <Project key={project.title} align="right" {...project} />;
+					return (
+						<Project
+							key={project.title}
+							align="right"
+							format={project.list.format}
+							{...project}
+						/>
+					);
 				}
 
 				return null;
@@ -25,7 +32,12 @@ const DesktopProjectList = () => (
 		<div className={styles.projectsRight}>
 			{projects.flatMap((project: ProjectData, i: number) => {
 				if (i % 2 !== 0) {
-					return <Project key={project.title} align="left" {...project} />;
+					<Project
+						key={project.title}
+						align="left"
+						format={project.list.format}
+						{...project}
+					/>;
 				}
 
 				return null;
@@ -44,6 +56,7 @@ const MobileProjectList = () => (
 				return (
 					<Project
 						key={project.title}
+						format={project.list.format}
 						align={i % 2 === 0 ? "right" : "left"}
 						{...project}
 					/>
