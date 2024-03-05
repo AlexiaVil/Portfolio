@@ -35,6 +35,10 @@
 	color: var(--black);
 }
 
+html {
+	color-scheme: dark;
+}
+
 html,
 body {
 	font-size: 20px;
