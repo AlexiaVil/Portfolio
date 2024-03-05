@@ -156,6 +156,6 @@ export default function Page({
 
 export async function generateStaticParams() {
 	return projects.map((project) => ({
-		slug: project.url,
+		project: project.url,
 	}));
 }
