@@ -5,7 +5,7 @@ import Nav from "./Nav/Nav";
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<a href="/" className={styles.headerSlot}>
+			<a href={`${process.env.basePath}/`} className={styles.headerSlot}>
 				<LogoIcon className={styles.logo} />
 				<span className={styles.name}>Alexia Villiez</span>
 			</a>
