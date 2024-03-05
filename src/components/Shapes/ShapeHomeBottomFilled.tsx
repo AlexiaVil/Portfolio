@@ -72,7 +72,7 @@ const ShapeHomeTop = (props: SVGProps<SVGSVGElement>) => {
 				ref={ref}
 				fill="#CDE6F5"
 				strokeWidth={12}
-				d={d}
+				d={`M${dJoinPos}C${d} ${dJoinPos}Z`}
 				clipRule="evenodd"
 			/>
 		</svg>
