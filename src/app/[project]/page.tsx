@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { ProjectData, ProjectScreenshot, projects } from "@/data/projects";
+import sizeOf from "image-size";
 import styles from "./ProjectPage.module.css";
 import Heading from "@/components/Heading/Heading";
 import Tag from "@/components/Tag/Tag";
 import Button from "@/components/Button/Button";
+import { join } from "path";
 
 export default function Page({
 	params: { project },
@@ -107,7 +109,6 @@ function generateScreenshotBlock(
 	const sideClass =
 		side === "left" ? styles.screenshotLeft : styles.screenshotRight;
 
-	console.log(screenshot);
 	if (screenshot.media) {
 		if (screenshot.media.type === "image") {
 			return (
@@ -157,4 +158,58 @@ export async function generateStaticParams() {
 	return projects.map((project) => ({
 		project: project.url,
 	}));
+}
+
+export async function generateMetadata({
+	params,
+}: {
+	params: { project: string };
+}) {
+	const project = projects.find((p) => p.url === params.project);
+
+	if (!project) {
+		return {};
+	}
+
+	const title = `${project.title} - Alexia Villiez`;
+	const description = project.list.description;
+	const url = `https://villiezalexia.fr/${process.env.basePath !== "" ? `${process.env.basePath}/` : ""}${project.url}`;
+	const { width, height } = getImageSize(project.list.image);
+
+	return {
+		title,
+		description,
+		openGraph: {
+			title,
+			description,
+			url,
+			type: "website",
+			siteName: "Alexia Villiez - UI Designer",
+			images: [
+				{
+					url: project.list.image,
+					width,
+					height,
+				},
+			],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title,
+			description,
+			images: [
+				{
+					url: project.list.image,
+					width,
+					height,
+				},
+			],
+		},
+	};
+}
+
+function getImageSize(image: string) {
+	const path = join(process.cwd(), "public", image);
+	const { width, height } = sizeOf(path);
+	return { width, height };
 }

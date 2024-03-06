@@ -7,6 +7,38 @@ import {
 } from "@/components/Shapes";
 import Button from "@/components/Button/Button";
 import { ProjectList } from "@/components/ProjectList/ProjectList";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Alexia Villiez - UI Designer",
+	description: "",
+	openGraph: {
+		title: "Alexia Villiez - UI Designer",
+		description: "",
+		url: "https://villiezalexia.fr",
+		type: "website",
+		siteName: "Alexia Villiez - UI Designer",
+		images: [
+			{
+				url: "/meta.png",
+				width: 1414,
+				height: 749,
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Alexia Villiez - UI Designer",
+		description: "",
+		images: [
+			{
+				url: "/meta.png",
+				width: 1414,
+				height: 749,
+			},
+		],
+	},
+};
 
 export const Home = () => {
 	return (
