@@ -125,6 +125,7 @@ export const projects: ProjectData[] = [
 				},
 				right: {
 					description: {
+						title: "",
 						text: "Creo a donc imaginé un jeu collaboratif, amusant et interactif pour faire découvrir cet univers aux plus jeunes. Avec une scénographie qui rappelle une rive, les jeunes doivent traverser la rivière sur des billes de bois en mousse poser au sol, pour aller défaire l'embâcle de l'autre côté de la rive le plus vite possible.",
 					},
 				},
