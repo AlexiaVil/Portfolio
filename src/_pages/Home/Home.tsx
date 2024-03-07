@@ -54,7 +54,7 @@ export const Home = () => {
 				</p>
 			</section>
 			<ProjectList />
-			<section className={styles.contact} id="contact">
+			<section className={styles.contact} data-section="contact">
 				<Heading>Contact</Heading>
 				<p className={styles.contactText}>
 					Envie de collaborer ou simplement de discuter de votre projet?
