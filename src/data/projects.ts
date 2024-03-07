@@ -43,7 +43,10 @@ export const projects: ProjectData[] = [
 			image: "/projects/_PAC/PAC_accueil.png",
 		},
 		url: "le-francais-une-langue-a-celebrer",
-		hero: ["/projects/_PAC/PAC_Image1_credit.png", "/projects/_PAC/PAC_Image2_credit.png"],
+		hero: [
+			"/projects/_PAC/PAC_Image1_credit.png",
+			"/projects/_PAC/PAC_Image2_credit.png",
+		],
 		title: "Le français, une langue à célébrer!",
 		description: [
 			"Pour le 45ème anniversaire de la Charte de la langue française, le mandat était  de concevoir et réaliser une exposition interactive sur la langue française au Québec et en Amérique du Nord. Le résultat, une exposition ludique, colorée, divisée  en plusieurs zones, avec des vidéos, un jeu de questionnaire, un karaoké et des jeux interactifs numériques.",
@@ -93,7 +96,7 @@ export const projects: ProjectData[] = [
 	},
 	{
 		list: {
-			format: "portrait",
+			format: "landscape",
 			title: "Exposition Interactive",
 			description:
 				"Une exposition ludique éphémère sur la langue française au Québec et en Amérique du Nord.",
