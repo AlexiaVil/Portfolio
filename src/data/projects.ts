@@ -61,7 +61,7 @@ export const projects: ProjectData[] = [
 					media: {
 						type: "image",
 						src: "/projects/_placeholder/169.png",
-						alt: "Accents d'Amérique",
+						alt: "Accents d'Amériques",
 					},
 				},
 				right: {
