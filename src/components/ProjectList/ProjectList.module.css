@@ -1,9 +1,9 @@
 .projects {
-	padding-top: 75px;
+	padding-top: 3.75rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 170px;
+	gap: 8.5rem;
 }
 
 .projectsLeft,
@@ -22,7 +22,13 @@
 	margin-top: 360px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
+	.projects {
+		gap: 5rem;
+	}
+}
+
+@media (max-width: 835px) {
 	.projects {
 		max-width: var(--small-max-width);
 		margin: 0 auto;
@@ -37,7 +43,7 @@
 	}
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 836px) {
 	.projectsMobile {
 		display: none;
 	}

@@ -12,45 +12,40 @@ const Nav = () => {
 	const [scrolling, setScrolling] = useState(false);
 
 	useEffect(() => {
-		console.log("effect running");
 		if (destination === 0) return;
 		if (scrolling) return;
 
-		console.log("scrolling to", destination);
-		console.log("scrollY", window.scrollY);
 		const controls = animate(window.scrollY, destination, {
 			ease: [0.16, 1, 0.3, 1],
 			duration: 0.5,
 			onUpdate: (value) => {
-				console.log("  value", value);
 				window.scrollTo(0, value);
 			},
 			onComplete: () => {
-				console.log("scroll complete");
-				setScrolling(false);
 				setDestination(0);
+				setScrolling(false);
 			},
 		});
 
 		setScrolling(true);
 		return () => {
-			console.log("cleanup");
+			setDestination(0);
+			setScrolling(false);
 			controls.stop();
 		};
 	}, [destination]);
 
-	const isHome = pathname === `${process.env.basePath}/`;
+	const isHome = pathname === "/";
 	const getLink = (href: string) => {
 		return isHome ? href : `${process.env.basePath}/${href}`;
 	};
 
 	const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-		if (!isHome) return;
+		if (!isHome || scrolling) return;
 
 		e.preventDefault();
 
 		const target = e.currentTarget.getAttribute("data-target");
-		console.log("target", target);
 		if (!target) return;
 
 		const targetElement = Array.from(
@@ -58,15 +53,12 @@ const Nav = () => {
 				.querySelectorAll<HTMLElement>(`section[data-section=${target}]`)
 				.values(),
 		).filter((e) => window.getComputedStyle(e).display !== "none")[0];
-		console.log("targetElement", targetElement);
 		if (!targetElement) return;
 
 		const body = document.querySelector("body");
-		console.log("body", body);
 		if (!body) return;
 
 		const html = document.querySelector("html");
-		console.log("html", html);
 		if (!html) return;
 
 		const height =
@@ -78,14 +70,13 @@ const Nav = () => {
 				html.offsetHeight,
 			) - window.innerHeight;
 
-		console.log("height", height);
 		const offset =
 			targetElement.getBoundingClientRect().top -
 			body.offsetTop +
 			window.scrollY -
 			130;
 
-		console.log("offset", offset);
+		history.replaceState(null, "", `#${target}`);
 		setDestination(Math.min(offset, height));
 	};
 
