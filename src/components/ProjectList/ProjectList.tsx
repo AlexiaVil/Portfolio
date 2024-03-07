@@ -11,7 +11,7 @@ import styles from "./ProjectList.module.css";
 const DesktopProjectList = () => (
 	<section
 		className={[styles.projects, styles.projectsDesktop].join(" ")}
-		id="projects"
+		data-section="projects"
 	>
 		<div className={styles.projectsLeft}>
 			{projects.flatMap((project: ProjectData, i: number) => {
@@ -49,7 +49,7 @@ const DesktopProjectList = () => (
 const MobileProjectList = () => (
 	<section
 		className={[styles.projects, styles.projectsMobile].join(" ")}
-		id="projects"
+		data-section="projects"
 	>
 		<div className={styles.projectsLeft}>
 			{projects.flatMap((project: ProjectData, i: number) => {
