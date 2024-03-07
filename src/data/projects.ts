@@ -46,9 +46,9 @@ export const projects: ProjectData[] = [
 		hero: ["/projects/_PAC/PAC_Image1_credit.png", "/projects/_PAC/PAC_Image2_credit.png"],
 		title: "Le français, une langue à célébrer!",
 		description: [
-			"Pour le 45ème anniversaire de la Charte de la langue française, le mandat était  de concevoir et réaliser une exposition interactive sur la langue française au Québec et en Amérique du Nord. Le résultat, une exposition ludique, colorée, divisée  en plusieurs zones, avec des vidéos, un jeu de questionnaire, un karaoké et des jeux interactifs numériques.",
+			"Pour le 45ème anniversaire de la Charte de la langue française, le mandat était de concevoir et réaliser une exposition interactive sur la langue française au Québec et en Amérique du Nord. Le résultat, une exposition ludique, colorée, divisée en plusieurs zones, avec des vidéos, un jeu de questionnaire, un karaoké et des jeux interactifs numériques.",
 			"En collaboration avec La Bande à Paul, en charge de la direction artistique de l'exposition, CREO avait en charge la direction artistique des huit interactifs.",
-			"Les objectifs : Garantir la cohérence de l'interface avec le contenu et l'univers de l'exposition. Respecter l'identité visuelle de l'exposition (épurée et couleurs vives). Concevoir des interfaces intuitives, attrayante et accessible à un public familiale.",
+			"Les objectifs : </br>Garantir la cohérence de l'interface avec le contenu et l'univers de l'exposition.</br>Respecter l'identité visuelle de l'exposition (épurée et couleurs vives).</br>Concevoir des interfaces intuitives, attrayante et accessible à un public familiale.",
 		],
 		year: 2023,
 		index: 0,
@@ -60,7 +60,7 @@ export const projects: ProjectData[] = [
 				left: {
 					media: {
 						type: "image",
-						src: "/projects/_placeholder/169.png",
+						src: "/projects/_PAC/PAC_Image3.png",
 						alt: "Accents d'Amériques",
 					},
 				},
@@ -75,16 +75,13 @@ export const projects: ProjectData[] = [
 				left: {
 					description: {
 						title: "Un jeu questionnaire - Vite sur tes patins!",
-						text: "Participer à un grand jeu-questionnaire animé par Katherine Levac et Richardson Zéphir.  La vidéo a été réalisée à l'externe par La Bande à Paul.",
+						text: "Participer à un grand jeu-questionnaire animé par Katherine Levac et Richardson Zéphir. La vidéo a été réalisée à l'externe par La Bande à Paul.",
 					},
 				},
 				right: {
 					media: {
-						type: "video",
-						src: [
-							"/projects/_placeholder/169.mp4",
-							"/projects/_placeholder/169.webm",
-						],
+						type: "image",
+						src: "/projects/_PAC/PAC_Image4.png",
 						alt: "Vite sur tes patins!",
 					},
 				},
