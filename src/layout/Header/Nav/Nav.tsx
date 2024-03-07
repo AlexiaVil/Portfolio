@@ -22,13 +22,15 @@ const Nav = () => {
 				window.scrollTo(0, value);
 			},
 			onComplete: () => {
-				setScrolling(false);
 				setDestination(0);
+				setScrolling(false);
 			},
 		});
 
 		setScrolling(true);
 		return () => {
+			setDestination(0);
+			setScrolling(false);
 			controls.stop();
 		};
 	}, [destination]);
@@ -39,7 +41,7 @@ const Nav = () => {
 	};
 
 	const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-		if (!isHome) return;
+		if (!isHome || scrolling) return;
 
 		e.preventDefault();
 
@@ -74,6 +76,7 @@ const Nav = () => {
 			window.scrollY -
 			130;
 
+		history.replaceState(null, "", `#${target}`);
 		setDestination(Math.min(offset, height));
 	};
 

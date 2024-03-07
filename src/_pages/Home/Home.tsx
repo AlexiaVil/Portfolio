@@ -53,8 +53,13 @@ export const Home = () => {
 					attractives et interactives.
 				</p>
 			</section>
+			<div id="projects" className={styles.scroll} />
 			<ProjectList />
-			<section className={styles.contact} data-section="contact">
+			<section
+				className={[styles.contact, styles.scroll].join(" ")}
+				id="contact"
+				data-section="contact"
+			>
 				<Heading>Contact</Heading>
 				<p className={styles.contactText}>
 					Envie de collaborer ou simplement de discuter de votre projet?
