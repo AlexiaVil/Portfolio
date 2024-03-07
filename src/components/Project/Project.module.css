@@ -27,7 +27,8 @@
 .landscape {
 	width: 100%;
 	max-width: 480px;
-	height: 315px;
+	max-height: 315px;
+	aspect-ratio: 16 / 9;
 }
 
 .portrait {
