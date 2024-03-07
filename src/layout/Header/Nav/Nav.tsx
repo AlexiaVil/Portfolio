@@ -41,6 +41,10 @@ const Nav = () => {
 
 	const isHome = pathname === `${process.env.basePath}/`;
 	const getLink = (href: string) => {
+		console.log("isHome", isHome);
+		console.log("  pathname", pathname);
+		console.log("  basePath", process.env.basePath);
+		console.log("  href", href);
 		return isHome ? href : `${process.env.basePath}/${href}`;
 	};
 
