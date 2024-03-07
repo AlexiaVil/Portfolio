@@ -51,7 +51,7 @@ export const projects: ProjectData[] = [
 		description: [
 			"Pour le 45ème anniversaire de la Charte de la langue française, le mandat était de concevoir et réaliser une exposition interactive sur la langue française au Québec et en Amérique du Nord. Le résultat, une exposition ludique, colorée, divisée en plusieurs zones, avec des vidéos, un jeu de questionnaire, un karaoké et des jeux interactifs numériques.",
 			"En collaboration avec La Bande à Paul, en charge de la direction artistique de l'exposition, CREO avait en charge la direction artistique des huit interactifs.",
-			"Les objectifs : </br>Garantir la cohérence de l'interface avec le contenu et l'univers de l'exposition.</br>Respecter l'identité visuelle de l'exposition (épurée et couleurs vives).</br>Concevoir des interfaces intuitives, attrayante et accessible à un public familiale.",
+			"Les objectifs : Garantir la cohérence de l'interface avec le contenu et l'univers de l'exposition. Respecter l'identité visuelle de l'exposition (épurée et couleurs vives). Concevoir des interfaces intuitives, attrayante et accessible à un public familiale.",
 		],
 		year: 2023,
 		index: 0,
@@ -96,53 +96,58 @@ export const projects: ProjectData[] = [
 			format: "landscape",
 			title: "Exposition Interactive",
 			description:
-				"Une exposition ludique éphémère sur la langue française au Québec et en Amérique du Nord.",
+				"Apprendre de manière ludique le travail des draveurs.",
 			image: "/projects/_placeholder/500.png",
 		},
-		url: "le-francais-une-langue-a-celebrer-2",
-		hero: ["/projects/_placeholder/169.png", "/projects/_placeholder/169.png"],
-		title: "Le français, une langue à célébrer!",
+		url: "alerte-a-embacle-2",
+		hero: ["/projects/_TEDRAPER/TEDRAPER_1.png", "/projects/_TEDRAPER/TEDRAPER_2.png"],
+		title: "Alerte à l'embâcle!",
 		description: [
-			"Pour le 45ème anniversaire de la Charte de la langue française, le mandat était  de concevoir et réaliser une exposition interactive sur la langue française au Québec et en Amérique du Nord. Le résultat, une exposition ludique, colorée, divisée  en plusieurs zones, avec des vidéos, un jeu de questionnaire, un karaoké et des jeux interactifs numériques.",
-			"En collaboration avec La Bande à Paul, en charge de la direction artistique de l'exposition, CREO avait en charge la direction artistique des huit interactifs.",
-			"Les objectifs : Garantir la cohérence de l'interface avec le contenu et l'univers de l'exposition. Respecter l'identité visuelle de l'exposition (épurée et couleurs vives). Concevoir des interfaces intuitives, attrayante et accessible à un public familiale.",
+			"Dans l'entrepôt de la Canadian International Paper (C.I.P.) situé à côté du site historique de T.E. Draper, CREO a été mandaté pour enrichir la visite de l'exposition permanente avec un espace dédié pour les groupes scolaires et les plus jeunes.",
+			"Ainsi on peut découvrir le travail difficile et dangereux, mais important des draveurs du Québec. Les draveurs étaient des ouvriers forestiers qui contrôlaient la flottaison des billes de bois sur les rivières et les lacs du Québec.",
 		],
 		year: 2023,
 		index: 1,
-		client: "Pointe-à-Callière, cité d'archéologie et d'histoire de Montréal",
-		collab: "La bande à Paul",
+		client: "Le site historique T.E.Draper",
+		collab: "Cécile Subra (scénographe)",
 		tags: ["Exposition Interactive", "Design UI"],
 		screenshots: [
 			{
 				left: {
 					media: {
-						type: "image",
-						src: "/projects/_placeholder/169.png",
-						alt: "Accents d'Amérique",
+						type: "video",
+						src: [
+							"/projects/_TEDRAPER/TEDRAPER_3.mp4",
+							"/projects/_TEDRAPER/TEDRAPER_3.webm",
+						],
+						alt: "Alerte à l'embâcle accueil",
 					},
 				},
 				right: {
 					description: {
-						title: "Une carte interactive - Accents d'Amérique",
-						text: "Le but, faire glisser des cartes personnages sur leur provenance géographique en Amérique du Nord, dans un temps imparti.",
+						text: "Creo a donc imaginé un jeu collaboratif, amusant et interactif pour faire découvrir cet univers aux plus jeunes. Avec une scénographie qui rappelle une rive, les jeunes doivent traverser la rivière sur des billes de bois en mousse poser au sol, pour aller défaire l'embâcle de l'autre côté de la rive le plus vite possible.",
 					},
 				},
 			},
 			{
 				left: {
-					description: {
-						title: "Un jeu questionnaire - Vite sur tes patins!",
-						text: "Participer à un grand jeu-questionnaire animé par Katherine Levac et Richardson Zéphir.  La vidéo a été réalisée à l'externe par La Bande à Paul.",
+					media: {
+						type: "video",
+						src: [
+							"/projects/_TEDRAPER/TEDRAPER_4.mp4",
+							"/projects/_TEDRAPER/TEDRAPER_4.webm",
+						],
+						alt: "Embâcle côté rivière",
 					},
 				},
 				right: {
 					media: {
 						type: "video",
 						src: [
-							"/projects/_placeholder/169.mp4",
-							"/projects/_placeholder/169.webm",
+							"/projects/_TEDRAPER/TEDRAPER_5.mp4",
+							"/projects/_TEDRAPER/TEDRAPER_5.webm",
 						],
-						alt: "Vite sur tes patins!",
+						alt: "Compteur côté rive",
 					},
 				},
 			},
