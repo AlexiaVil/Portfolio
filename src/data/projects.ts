@@ -1,10 +1,11 @@
 export type ProjectFormat = "landscape" | "portrait";
+export type ProjectMedia = {
+	type: "image" | "video";
+	src: string | string[];
+	alt: string;
+};
 export type ProjectScreenshot = {
-	media?: {
-		type: "image" | "video";
-		src: string | string[];
-		alt: string;
-	};
+	media?: ProjectMedia;
 	description?: {
 		title?: string;
 		text?: string;
@@ -19,7 +20,7 @@ export interface ProjectData {
 		image: string;
 	};
 	url: string;
-	hero: string[];
+	hero: ProjectMedia[];
 	title: string;
 	description: string[];
 	year: number;
@@ -44,8 +45,16 @@ export const projects: ProjectData[] = [
 		},
 		url: "le-francais-une-langue-a-celebrer",
 		hero: [
-			"/projects/_PAC/PAC_Image1_credit.png",
-			"/projects/_PAC/PAC_Image2_credit.png",
+			{
+				type: "image",
+				src: "/projects/_PAC/PAC_Image1_credit.png",
+				alt: "",
+			},
+			{
+				type: "image",
+				src: "/projects/_PAC/PAC_Image2_credit.png",
+				alt: "",
+			},
 		],
 		title: "Le français, une langue à célébrer!",
 		description: [
@@ -95,12 +104,22 @@ export const projects: ProjectData[] = [
 		list: {
 			format: "landscape",
 			title: "Exposition Interactive",
-			description:
-				"Apprendre de manière ludique le travail des draveurs.",
+			description: "Apprendre de manière ludique le travail des draveurs.",
 			image: "/projects/_placeholder/500.png",
 		},
 		url: "alerte-a-embacle",
-		hero: ["/projects/_TEDRAPER/TEDRAPER_1.png", "/projects/_TEDRAPER/TEDRAPER_2.png"],
+		hero: [
+			{
+				type: "image",
+				src: "/projects/_TEDRAPER/TEDRAPER_1.png",
+				alt: "",
+			},
+			{
+				type: "image",
+				src: "/projects/_TEDRAPER/TEDRAPER_2.png",
+				alt: "",
+			},
+		],
 		title: "Alerte à l'embâcle!",
 		description: [
 			"Dans l'entrepôt de la Canadian International Paper (C.I.P.) situé à côté du site historique de T.E. Draper, CREO a été mandaté pour enrichir la visite de l'exposition permanente avec un espace dédié pour les groupes scolaires et les plus jeunes.",
@@ -158,16 +177,27 @@ export const projects: ProjectData[] = [
 		list: {
 			format: "landscape",
 			title: "Exposition Interactive",
-			description:
-				"Apprendre de manière ludique le travail des draveurs.",
+			description: "Apprendre de manière ludique le travail des draveurs.",
 			image: "/projects/_placeholder/500.png",
 		},
 		url: "carbone-scolere",
-		hero: ["/projects/_placeholder/500.png", "/projects/_placeholder/500.png"],
-		title: "Carbone Scol'ère",
-		description: [
-			"...",
+		hero: [
+			{
+				type: "image",
+				src: "/projects/_placeholder/500.png",
+				alt: "",
+			},
+			{
+				type: "video",
+				src: [
+					"/projects/_placeholder/169.mp4",
+					"/projects/_placeholder/169.webm",
+				],
+				alt: "",
+			},
 		],
+		title: "Carbone Scol'ère",
+		description: ["..."],
 		year: 2023,
 		index: 2,
 		client: "Le site historique T.E.Draper",
@@ -220,16 +250,24 @@ export const projects: ProjectData[] = [
 		list: {
 			format: "portrait",
 			title: "Exposition Interactive",
-			description:
-				"Apprendre de manière ludique le travail des draveurs.",
+			description: "Apprendre de manière ludique le travail des draveurs.",
 			image: "/projects/_placeholder/500.png",
 		},
 		url: "axelle-et-pitchouf",
-		hero: ["/projects/_placeholder/500.png", "/projects/_placeholder/500.png"],
-		title: "SAAQ",
-		description: [
-			"...",
+		hero: [
+			{
+				type: "image",
+				src: "/projects/_placeholder/500.png",
+				alt: "",
+			},
+			{
+				type: "image",
+				src: "/projects/_placeholder/500.png",
+				alt: "",
+			},
 		],
+		title: "SAAQ",
+		description: ["..."],
 		year: 2021,
 		index: 3,
 		client: "Le site historique T.E.Draper",
@@ -287,7 +325,18 @@ export const projects: ProjectData[] = [
 			image: "/projects/_UPA/UPA_kasscrout_0.png",
 		},
 		url: "kasscrout",
-		hero: ["/projects/_UPA/UPA_kasscrout_1.PNG", "/projects/_UPA/UPA_kasscrout_2.PNG"],
+		hero: [
+			{
+				type: "image",
+				src: "/projects/_UPA/UPA_kasscrout_1.PNG",
+				alt: "",
+			},
+			{
+				type: "image",
+				src: "/projects/_UPA/UPA_kasscrout_2.PNG",
+				alt: "",
+			},
+		],
 		title: "Kasscrout",
 		description: [
 			"Kasscrout est un jeu éducatif pour les jeunes de 9 à 12 ans. Il permet aux enfants de découvrir de manière ludique et interactive comment sont produits les aliments qu'ils consomment.",
