@@ -287,7 +287,7 @@ export const projects: ProjectData[] = [
 			image: "/projects/_UPA/UPA_kasscrout_0.png",
 		},
 		url: "kasscrout",
-		hero: ["/projects/_UPA/UPA_kasscrout_1.png", "/projects/_UPA/UPA_kasscrout_2.png"],
+		hero: ["/projects/_UPA/UPA_kasscrout_1.PNG", "/projects/_UPA/UPA_kasscrout_2.PNG"],
 		title: "Kasscrout",
 		description: [
 			"Kasscrout est un jeu éducatif pour les jeunes de 9 à 12 ans. Il permet aux enfants de découvrir de manière ludique et interactive comment sont produits les aliments qu'ils consomment.",
@@ -336,7 +336,7 @@ export const projects: ProjectData[] = [
 				left: {
 					media: {
 						type: "image",
-						src: "/projects/_UPA/UPA_kasscrout_5.png",
+						src: "/projects/_UPA/UPA_kasscrout_5.PNG",
 						alt: "Diverses illustrations du projet",
 					},
 				},
@@ -352,14 +352,14 @@ export const projects: ProjectData[] = [
 				left: {
 					media: {
 						type: "image",
-						src: "/projects/_UPA/UPA_kasscrout_6.png",
+						src: "/projects/_UPA/UPA_kasscrout_6.PNG",
 						alt: "Popup de la carte du Québec",
 					},
 				},
 				right: {
 					media: {
 						type: "image",
-						src: "/projects/_UPA/UPA_kasscrout_7.png",
+						src: "/projects/_UPA/UPA_kasscrout_7.jpg",
 						alt: "Jeu cherche et trouve",
 					},
 				},
