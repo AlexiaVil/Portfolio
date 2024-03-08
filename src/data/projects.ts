@@ -99,7 +99,7 @@ export const projects: ProjectData[] = [
 				"Apprendre de manière ludique le travail des draveurs.",
 			image: "/projects/_placeholder/500.png",
 		},
-		url: "alerte-a-embacle-2",
+		url: "alerte-a-embacle",
 		hero: ["/projects/_TEDRAPER/TEDRAPER_1.png", "/projects/_TEDRAPER/TEDRAPER_2.png"],
 		title: "Alerte à l'embâcle!",
 		description: [
@@ -149,6 +149,218 @@ export const projects: ProjectData[] = [
 							"/projects/_TEDRAPER/TEDRAPER_5.webm",
 						],
 						alt: "Compteur côté rive",
+					},
+				},
+			},
+		],
+	},
+	{
+		list: {
+			format: "portrait",
+			title: "Exposition Interactive",
+			description:
+				"Apprendre de manière ludique le travail des draveurs.",
+			image: "/projects/_placeholder/500.png",
+		},
+		url: "carbone-scolere",
+		hero: ["/projects/_placeholder/500.png", "/projects/_placeholder/500.png"],
+		title: "Carbone Scol'ère",
+		description: [
+			"...",
+		],
+		year: 2023,
+		index: 2,
+		client: "Le site historique T.E.Draper",
+		collab: "Cécile Subra (scénographe)",
+		tags: ["Exposition Interactive", "Design UI"],
+		screenshots: [
+			{
+				left: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_placeholder/169.mp4",
+							"/projects/_placeholder/169.webm",
+						],
+						alt: "Alerte à l'embâcle accueil",
+					},
+				},
+				right: {
+					description: {
+						title: "",
+						text: "...",
+					},
+				},
+			},
+			{
+				left: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_placeholder/169.mp4",
+							"/projects/_placeholder/169.webm",
+						],
+						alt: "Embâcle côté rivière",
+					},
+				},
+				right: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_placeholder/169.mp4",
+							"/projects/_placeholder/169.webm",
+						],
+						alt: "Compteur côté rive",
+					},
+				},
+			},
+		],
+	},
+	{
+		list: {
+			format: "landscape",
+			title: "Exposition Interactive",
+			description:
+				"Apprendre de manière ludique le travail des draveurs.",
+			image: "/projects/_placeholder/500.png",
+		},
+		url: "axelle-et-pitchouf",
+		hero: ["/projects/_placeholder/500.png", "/projects/_placeholder/500.png"],
+		title: "SAAQ",
+		description: [
+			"...",
+		],
+		year: 2021,
+		index: 3,
+		client: "Le site historique T.E.Draper",
+		collab: "Cécile Subra (scénographe)",
+		tags: ["Exposition Interactive", "Design UI"],
+		screenshots: [
+			{
+				left: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_placeholder/169.mp4",
+							"/projects/_placeholder/169.webm",
+						],
+						alt: "Alerte à l'embâcle accueil",
+					},
+				},
+				right: {
+					description: {
+						title: "",
+						text: "...",
+					},
+				},
+			},
+			{
+				left: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_placeholder/169.mp4",
+							"/projects/_placeholder/169.webm",
+						],
+						alt: "Embâcle côté rivière",
+					},
+				},
+				right: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_placeholder/169.mp4",
+							"/projects/_placeholder/169.webm",
+						],
+						alt: "Compteur côté rive",
+					},
+				},
+			},
+		],
+	},
+	{
+		list: {
+			format: "portrait",
+			title: "Jeu numérique",
+			description:
+				"Faire découvrir les producteurs du Québec en aidant le chef du kasscrout.",
+			image: "/projects/_UPA/UPA_kasscrout_0.png",
+		},
+		url: "kasscrout",
+		hero: ["/projects/_UPA/UPA_kasscrout_1.png", "/projects/_UPA/UPA_kasscrout_2.png"],
+		title: "Kasscrout",
+		description: [
+			"Kasscrout est un jeu éducatif pour les jeunes de 9 à 12 ans. Il permet aux enfants de découvrir de manière ludique et interactive comment sont produits les aliments qu'ils consomment.",
+			"Dans un univers absurde, loufoque et coloré, les joueurs doivent parcourir les régions du Québec, à la recherche des ingrédients demandés par le chef du Kasscrout. Le jeu est composé de 15 missions incluant plus de 50 mini-jeux.",
+		],
+		year: 2020,
+		index: 4,
+		client: "L’union des producteurs agricoles (UPA)",
+		collab: ".",
+		tags: ["Web", "Design UI", "Illustration", "Animation"],
+		screenshots: [
+			{
+				left: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_UPA/UPA_kasscrout_3.mp4",
+							"/projects/_UPA/UPA_kasscrout_3.webm",
+						],
+						alt: "Animation du chef du kasscrout",
+					},
+				},
+				right: {
+					description: {
+						title: "",
+						text: "J'ai participé à ce projet en créant certaines des illustrations, des animations, des interfaces de jeu, en déclinant le style visuel créer par la directrice artistique du projet.",
+					},
+				},
+			},
+			{
+				left: {
+					description: {
+						title: "",
+						text: "Le jeu est accessible sur différents supports à travers un site internet, qui permet aux parents de suivre l'évolution de leurs enfants et de regrouper toutes les informations des agriculteurs et producteurs représentés dans le jeu.",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_UPA/UPA_kasscrout_4.png",
+						alt: "Mockup du jeu sur laptop et téléphone",
+					},
+				},
+			},
+			{
+				left: {
+					media: {
+						type: "image",
+						src: "/projects/_UPA/UPA_kasscrout_5.png",
+						alt: "Diverses illustrations du projet",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "...",
+						alt: "",
+					},
+				},
+			},
+			{
+				left: {
+					media: {
+						type: "image",
+						src: "/projects/_UPA/UPA_kasscrout_6.png",
+						alt: "Popup de la carte du Québec",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_UPA/UPA_kasscrout_7.png",
+						alt: "Jeu cherche et trouve",
 					},
 				},
 			},
