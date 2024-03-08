@@ -156,7 +156,7 @@ export const projects: ProjectData[] = [
 	},
 	{
 		list: {
-			format: "portrait",
+			format: "landscape",
 			title: "Exposition Interactive",
 			description:
 				"Apprendre de manière ludique le travail des draveurs.",
@@ -218,7 +218,7 @@ export const projects: ProjectData[] = [
 	},
 	{
 		list: {
-			format: "landscape",
+			format: "portrait",
 			title: "Exposition Interactive",
 			description:
 				"Apprendre de manière ludique le travail des draveurs.",
@@ -280,7 +280,7 @@ export const projects: ProjectData[] = [
 	},
 	{
 		list: {
-			format: "portrait",
+			format: "landscape",
 			title: "Jeu numérique",
 			description:
 				"Faire découvrir les producteurs du Québec en aidant le chef du kasscrout.",
