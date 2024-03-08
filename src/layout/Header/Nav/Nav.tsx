@@ -33,7 +33,7 @@ const Nav = () => {
 			setScrolling(false);
 			controls.stop();
 		};
-	}, [destination]);
+	}, [destination, scrolling]);
 
 	const isHome = pathname === "/";
 	const getLink = (href: string) => {

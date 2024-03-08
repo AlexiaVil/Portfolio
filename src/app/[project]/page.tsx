@@ -210,21 +210,27 @@ export async function generateMetadata({
 	const url = `https://villiezalexia.fr/${process.env.basePath !== "" ? `${process.env.basePath}/` : ""}${project.url}`;
 
 	let size;
+	let imageUrl;
+
 	if (project.hero[0]?.type === "image") {
 		size = getImageSize(project.hero[0].src as string);
+		imageUrl = project.hero[0].src as string;
 	}
 
 	if (project.hero[1]?.type === "image" && size === undefined) {
 		size = getImageSize(project.hero[1].src as string);
+		imageUrl = project.hero[1].src as string;
 	}
 
 	if (size === undefined) {
 		project.screenshots.some((screenshot) => {
 			if (screenshot.left?.media?.type === "image") {
 				size = getImageSize(screenshot.left.media.src as string);
+				imageUrl = screenshot.left.media.src as string;
 				return true;
 			} else if (screenshot.right?.media?.type === "image") {
 				size = getImageSize(screenshot.right.media.src as string);
+				imageUrl = screenshot.right.media.src as string;
 				return true;
 			}
 
@@ -232,7 +238,7 @@ export async function generateMetadata({
 		});
 	}
 
-	if (size === undefined) {
+	if (size === undefined || imageUrl === undefined) {
 		console.error("No image found for project", project.url);
 		return {};
 	}
@@ -250,7 +256,7 @@ export async function generateMetadata({
 			siteName: "Alexia Villiez - UI Designer",
 			images: [
 				{
-					url: `${process.env.basePath}/${project.list.image}`,
+					url: `${process.env.basePath}/${imageUrl}`,
 					width,
 					height,
 				},
@@ -262,7 +268,7 @@ export async function generateMetadata({
 			description,
 			images: [
 				{
-					url: `${process.env.basePath}/${project.list.image}`,
+					url: `${process.env.basePath}/${imageUrl}`,
 					width,
 					height,
 				},
