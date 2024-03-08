@@ -26,16 +26,40 @@ export default function Page({
 
 	const Hero = ({ className }: { className: string }) => (
 		<div className={[styles.hero, className].join(" ")}>
-			{projectData.hero.map((image, i) => (
-				<div key={`${image}${i}`} className={styles.imageContainer}>
-					<Image
-						alt={projectData.title}
-						fill
-						className={styles.image}
-						src={getImageLink(image)}
-					/>
-				</div>
-			))}
+			{projectData.hero.map((media, i) => {
+				if (media.type === "image") {
+					return (
+						<div key={`${media.src}${i}`} className={styles.imageContainer}>
+							<Image
+								alt={projectData.title}
+								fill
+								className={styles.image}
+								src={getImageLink(media.src as string)}
+							/>
+						</div>
+					);
+				} else {
+					return (
+						<div key={`${media.src[0]}${i}`} className={styles.imageContainer}>
+							<video
+								className={styles.screenshotVideo}
+								autoPlay
+								loop
+								muted
+								playsInline
+							>
+								{(media.src as Array<string>).map((src: string) => (
+									<source
+										key={src}
+										src={getImageLink(src)}
+										type={`video/${src.split(".")[1]}`}
+									/>
+								))}
+							</video>
+						</div>
+					);
+				}
+			})}
 		</div>
 	);
 
@@ -54,9 +78,11 @@ export default function Page({
 						))}
 					</div>
 					<Heading variant="h3">{projectData.client}</Heading>
-					<span className={styles.collab}>
-						en collaboration avec {projectData.collab}
-					</span>
+					{projectData.collab && (
+						<span className={styles.collab}>
+							en collaboration avec {projectData.collab}
+						</span>
+					)}
 				</div>
 				<Hero className={styles.m} />
 				<div className={styles.description}>
@@ -102,12 +128,16 @@ export default function Page({
 }
 
 function generateScreenshotBlock(
-	screenshot: ProjectScreenshot,
+	screenshot: ProjectScreenshot | undefined,
 	side: "left" | "right",
 ) {
 	const getImageLink = (image: string) => `${process.env.basePath}${image}`;
 	const sideClass =
 		side === "left" ? styles.screenshotLeft : styles.screenshotRight;
+
+	if (!screenshot) {
+		return <div className={sideClass} />;
+	}
 
 	if (screenshot.media) {
 		if (screenshot.media.type === "image") {
@@ -143,12 +173,16 @@ function generateScreenshotBlock(
 	} else {
 		return (
 			<div className={[styles.screenshotText, sideClass].join(" ")}>
-				<span className={styles.screenshotTitle}>
-					{screenshot.description?.title}
-				</span>
-				<p className={styles.screenshotDescription}>
-					{screenshot.description?.text}
-				</p>
+				{screenshot.description?.title && (
+					<span className={styles.screenshotTitle}>
+						{screenshot.description?.title}
+					</span>
+				)}
+				{screenshot.description?.text && (
+					<p className={styles.screenshotDescription}>
+						{screenshot.description?.text}
+					</p>
+				)}
 			</div>
 		);
 	}
@@ -174,7 +208,36 @@ export async function generateMetadata({
 	const title = `${project.title} - Alexia Villiez`;
 	const description = project.list.description;
 	const url = `https://villiezalexia.fr/${process.env.basePath !== "" ? `${process.env.basePath}/` : ""}${project.url}`;
-	const { width, height } = getImageSize(project.list.image);
+
+	let size;
+	if (project.hero[0]?.type === "image") {
+		size = getImageSize(project.hero[0].src as string);
+	}
+
+	if (project.hero[1]?.type === "image" && size === undefined) {
+		size = getImageSize(project.hero[1].src as string);
+	}
+
+	if (size === undefined) {
+		project.screenshots.some((screenshot) => {
+			if (screenshot.left?.media?.type === "image") {
+				size = getImageSize(screenshot.left.media.src as string);
+				return true;
+			} else if (screenshot.right?.media?.type === "image") {
+				size = getImageSize(screenshot.right.media.src as string);
+				return true;
+			}
+
+			return false;
+		});
+	}
+
+	if (size === undefined) {
+		console.error("No image found for project", project.url);
+		return {};
+	}
+
+	const { width, height } = size;
 
 	return {
 		title,
@@ -187,7 +250,7 @@ export async function generateMetadata({
 			siteName: "Alexia Villiez - UI Designer",
 			images: [
 				{
-					url: project.list.image,
+					url: `${process.env.basePath}/${project.list.image}`,
 					width,
 					height,
 				},
@@ -199,7 +262,7 @@ export async function generateMetadata({
 			description,
 			images: [
 				{
-					url: project.list.image,
+					url: `${process.env.basePath}/${project.list.image}`,
 					width,
 					height,
 				},
