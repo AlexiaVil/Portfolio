@@ -17,7 +17,7 @@ export interface ProjectData {
 		format: ProjectFormat;
 		title: string;
 		description: string;
-		image: string;
+		media: ProjectMedia;
 	};
 	url: string;
 	hero: ProjectMedia[];
@@ -41,7 +41,11 @@ export const projects: ProjectData[] = [
 			title: "Exposition Interactive",
 			description:
 				"Une exposition ludique éphémère sur la langue française au Québec et en Amérique du Nord.",
-			image: "/projects/_PAC/PAC_accueil.png",
+			media: {
+				type: "image",
+				src: "/projects/_PAC/PAC_accueil.png",
+				alt: "",
+			},
 		},
 		url: "le-francais-une-langue-a-celebrer",
 		hero: [
@@ -105,7 +109,14 @@ export const projects: ProjectData[] = [
 			format: "landscape",
 			title: "Exposition Interactive",
 			description: "Apprendre de manière ludique le travail des draveurs.",
-			image: "/projects/_placeholder/500.png",
+			media: {
+				type: "video",
+				src: [
+					"/projects/_TEDRAPER/TEDRAPER_3.mp4",
+					"/projects/_TEDRAPER/TEDRAPER_3.webm",
+				],
+				alt: "",
+			},
 		},
 		url: "alerte-a-embacle",
 		hero: [
@@ -178,7 +189,11 @@ export const projects: ProjectData[] = [
 			format: "landscape",
 			title: "Exposition Interactive",
 			description: "Apprendre de manière ludique le travail des draveurs.",
-			image: "/projects/_placeholder/500.png",
+			media: {
+				type: "image",
+				src: "/projects/_placeholder/500.png",
+				alt: "",
+			},
 		},
 		url: "carbone-scolere",
 		hero: [
@@ -251,7 +266,11 @@ export const projects: ProjectData[] = [
 			format: "portrait",
 			title: "Exposition Interactive",
 			description: "Apprendre de manière ludique le travail des draveurs.",
-			image: "/projects/_placeholder/500.png",
+			media: {
+				type: "image",
+				src: "/projects/_placeholder/500.png",
+				alt: "",
+			},
 		},
 		url: "axelle-et-pitchouf",
 		hero: [
@@ -322,7 +341,11 @@ export const projects: ProjectData[] = [
 			title: "Jeu numérique",
 			description:
 				"Faire découvrir les producteurs du Québec en aidant le chef du kasscrout.",
-			image: "/projects/_UPA/UPA_kasscrout_0.png",
+			media: {
+				type: "image",
+				src: "/projects/_UPA/UPA_kasscrout_0.PNG",
+				alt: "",
+			},
 		},
 		url: "kasscrout",
 		hero: [
