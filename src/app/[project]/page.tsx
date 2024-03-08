@@ -256,7 +256,7 @@ export async function generateMetadata({
 			siteName: "Alexia Villiez - UI Designer",
 			images: [
 				{
-					url: `${process.env.basePath}/${imageUrl}`,
+					url: imageUrl,
 					width,
 					height,
 				},
@@ -268,7 +268,7 @@ export async function generateMetadata({
 			description,
 			images: [
 				{
-					url: `${process.env.basePath}/${imageUrl}`,
+					url: imageUrl,
 					width,
 					height,
 				},
