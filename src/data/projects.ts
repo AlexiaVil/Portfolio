@@ -296,7 +296,6 @@ export const projects: ProjectData[] = [
 		year: 2020,
 		index: 4,
 		client: "L’union des producteurs agricoles (UPA)",
-		collab: ".",
 		tags: ["Web", "Design UI", "Illustration", "Animation"],
 		screenshots: [
 			{

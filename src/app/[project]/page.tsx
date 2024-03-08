@@ -54,9 +54,11 @@ export default function Page({
 						))}
 					</div>
 					<Heading variant="h3">{projectData.client}</Heading>
-					<span className={styles.collab}>
-						en collaboration avec {projectData.collab}
-					</span>
+					{projectData.collab && (
+						<span className={styles.collab}>
+							en collaboration avec {projectData.collab}
+						</span>
+					)}
 				</div>
 				<Hero className={styles.m} />
 				<div className={styles.description}>
