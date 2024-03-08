@@ -3,6 +3,8 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	text-decoration: none;
+	color: var(--white);
 }
 
 .project:not(:last-child) {
@@ -53,7 +55,7 @@
 	margin-bottom: 0.1875rem;
 }
 
-.link:hover {
+.project:hover .link {
 	color: var(--orange);
 }
 

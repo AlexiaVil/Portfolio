@@ -24,7 +24,8 @@ const Project = ({
 	const getImageLink = (image: string) => `${process.env.basePath}${image}`;
 
 	return (
-		<div
+		<Link
+			href={url}
 			className={[styles.project, align === "right" ? styles.right : ""].join(
 				" ",
 			)}
@@ -49,7 +50,7 @@ const Project = ({
 					))}
 				</video>
 			) : (
-				<div
+				<span
 					className={[
 						styles.imageContainer,
 						format === "portrait" ? styles.portrait : styles.landscape,
@@ -61,16 +62,14 @@ const Project = ({
 						fill={true}
 						className={styles.image}
 					/>
-				</div>
+				</span>
 			)}
 			<Heading variant="h4" className={styles.subtitle}>
 				{year} - {longTitle}
 			</Heading>
-			<Link href={url} className={styles.link}>
-				{title}
-			</Link>
-			<p className={styles.description}>{description}</p>
-		</div>
+			<span className={styles.link}>{title}</span>
+			<span className={styles.description}>{description}</span>
+		</Link>
 	);
 };
 
