@@ -102,12 +102,16 @@ export default function Page({
 }
 
 function generateScreenshotBlock(
-	screenshot: ProjectScreenshot,
+	screenshot: ProjectScreenshot | undefined,
 	side: "left" | "right",
 ) {
 	const getImageLink = (image: string) => `${process.env.basePath}${image}`;
 	const sideClass =
 		side === "left" ? styles.screenshotLeft : styles.screenshotRight;
+
+	if (!screenshot) {
+		return <div className={sideClass} />;
+	}
 
 	if (screenshot.media) {
 		if (screenshot.media.type === "image") {
@@ -143,12 +147,16 @@ function generateScreenshotBlock(
 	} else {
 		return (
 			<div className={[styles.screenshotText, sideClass].join(" ")}>
-				<span className={styles.screenshotTitle}>
-					{screenshot.description?.title}
-				</span>
-				<p className={styles.screenshotDescription}>
-					{screenshot.description?.text}
-				</p>
+				{screenshot.description?.title && (
+					<span className={styles.screenshotTitle}>
+						{screenshot.description?.title}
+					</span>
+				)}
+				{screenshot.description?.text && (
+					<p className={styles.screenshotDescription}>
+						{screenshot.description?.text}
+					</p>
+				)}
 			</div>
 		);
 	}

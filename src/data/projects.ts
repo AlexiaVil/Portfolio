@@ -6,8 +6,8 @@ export type ProjectScreenshot = {
 		alt: string;
 	};
 	description?: {
-		title: string;
-		text: string;
+		title?: string;
+		text?: string;
 	};
 };
 
@@ -25,11 +25,11 @@ export interface ProjectData {
 	year: number;
 	index: number;
 	client: string;
-	collab: string;
+	collab?: string;
 	tags: string[];
 	screenshots: {
-		left: ProjectScreenshot;
-		right: ProjectScreenshot;
+		left?: ProjectScreenshot;
+		right?: ProjectScreenshot;
 	}[];
 }
 
