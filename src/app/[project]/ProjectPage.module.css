@@ -91,7 +91,7 @@
 .screenshotVideo {
 	position: relative;
 	aspect-ratio: 16 / 9;
-	flex: 1 1 50%;
+	flex: 0 1 50%;
 	max-width: 32.5rem;
 	max-height: 18.5rem;
 }
@@ -103,7 +103,7 @@
 }
 
 .screenshotText {
-	flex: 1 0 50%;
+	flex: 0 1 50%;
 }
 
 .video {
