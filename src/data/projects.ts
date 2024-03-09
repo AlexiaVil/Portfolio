@@ -97,7 +97,7 @@ export const projects: ProjectData[] = [
 			title: "Exposition Interactive",
 			description:
 				"Apprendre de manière ludique le travail des draveurs.",
-			image: "/projects/_placeholder/500.png",
+			image: "/projects/_TEDRAPER/TEDRAPER_0.mp4",
 		},
 		url: "alerte-a-embacle",
 		hero: ["/projects/_TEDRAPER/TEDRAPER_1.png", "/projects/_TEDRAPER/TEDRAPER_2.png"],
@@ -341,10 +341,9 @@ export const projects: ProjectData[] = [
 					},
 				},
 				right: {
-					media: {
-						type: "image",
-						src: "...",
-						alt: "",
+					description: {
+						title: "",
+						text: "...",
 					},
 				},
 			},
