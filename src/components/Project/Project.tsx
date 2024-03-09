@@ -20,36 +20,56 @@ const Project = ({
 	format,
 	align,
 }: ProjectProps) => {
-	const { title, description, image } = list;
+	const { title, description, media } = list;
 	const getImageLink = (image: string) => `${process.env.basePath}${image}`;
 
 	return (
-		<div
+		<Link
+			href={url}
 			className={[styles.project, align === "right" ? styles.right : ""].join(
 				" ",
 			)}
 		>
-			<div
-				className={[
-					styles.imageContainer,
-					format === "portrait" ? styles.portrait : styles.landscape,
-				].join(" ")}
-			>
-				<Image
-					src={getImageLink(image)}
-					alt={title}
-					fill={true}
-					className={styles.image}
-				/>
-			</div>
+			{media.type === "video" ? (
+				<video
+					className={[
+						styles.video,
+						format === "portrait" ? styles.portrait : styles.landscape,
+					].join(" ")}
+					autoPlay
+					loop
+					muted
+					playsInline
+				>
+					{(media.src as Array<string>).map((src: string) => (
+						<source
+							key={src}
+							src={getImageLink(src)}
+							type={`video/${src.split(".")[1]}`}
+						/>
+					))}
+				</video>
+			) : (
+				<span
+					className={[
+						styles.imageContainer,
+						format === "portrait" ? styles.portrait : styles.landscape,
+					].join(" ")}
+				>
+					<Image
+						src={getImageLink(media.src as string)}
+						alt={media.alt}
+						fill={true}
+						className={styles.image}
+					/>
+				</span>
+			)}
 			<Heading variant="h4" className={styles.subtitle}>
 				{year} - {longTitle}
 			</Heading>
-			<Link href={url} className={styles.link}>
-				{title}
-			</Link>
-			<p className={styles.description}>{description}</p>
-		</div>
+			<span className={styles.link}>{title}</span>
+			<span className={styles.description}>{description}</span>
+		</Link>
 	);
 };
 
