@@ -83,10 +83,6 @@
 	font-weight: 800;
 }
 
-.screenshotDescription {
-	font-family: var(--bst);
-}
-
 .screenshotImage,
 .screenshotVideo {
 	position: relative;
