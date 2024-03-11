@@ -47,10 +47,9 @@ export const Home = () => {
 			<ShapeHomeBottomFilled />
 			<ShapeHomeBottom />
 			<section className={styles.intro}>
-				<Heading>UI Designer</Heading>
+				<Heading>Allo, je suis Alexia, UI designer</Heading>
 				<p className={styles.introText}>
-					À Montréal depuis 5 ans, j’ai à coeur de créer des expériences
-					attractives et interactives.
+				À Montréal depuis 2019, j’ai à cœur de créer des expériences attractives et interactives pour tous les publics. J'ai toujours aimer créer, inventer, apprendre et imaginer depuis toute petite. Voici quelques projets sur lesquels j'ai pu travailler, au cours des dernières années.
 				</p>
 			</section>
 			<div id="projects" className={styles.scroll} />
