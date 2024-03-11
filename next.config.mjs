@@ -1,4 +1,4 @@
-const basePath = process.env.BASEPATH ?? undefined;
+const basePath = process.env.BASEPATH ?? "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
