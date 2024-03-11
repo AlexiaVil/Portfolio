@@ -15,7 +15,7 @@ const Nav = () => {
 		if (destination === 0) return;
 		if (scrolling) return;
 
-		const controls = animate(window.scrollY, destination, {
+		animate(window.scrollY, destination, {
 			ease: [0.16, 1, 0.3, 1],
 			duration: 0.5,
 			onUpdate: (value) => {
@@ -28,11 +28,6 @@ const Nav = () => {
 		});
 
 		setScrolling(true);
-		return () => {
-			setDestination(0);
-			setScrolling(false);
-			controls.stop();
-		};
 	}, [destination, scrolling]);
 
 	const isHome = pathname === "/";
@@ -76,8 +71,9 @@ const Nav = () => {
 			window.scrollY -
 			130;
 
-		history.replaceState(null, "", `#${target}`);
 		setDestination(Math.min(offset, height));
+		if (location.hash === `#${target}`) return;
+		history.replaceState(null, "", `#${target}`);
 	};
 
 	return (
