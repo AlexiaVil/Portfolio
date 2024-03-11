@@ -343,7 +343,7 @@ export const projects: ProjectData[] = [
 				"Faire découvrir les producteurs du Québec en aidant le chef du kasscrout.",
 			media: {
 				type: "image",
-				src: "/projects/_UPA/UPA_kasscrout_0.PNG",
+				src: "/projects/_UPA/UPA_kasscrout_0.png",
 				alt: "",
 			},
 		},
