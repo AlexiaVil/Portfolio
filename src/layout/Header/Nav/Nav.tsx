@@ -5,11 +5,13 @@ import styles from "./Nav.module.css";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { animate } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Nav = () => {
 	const pathname = usePathname();
 	const [destination, setDestination] = useState(0);
 	const [scrolling, setScrolling] = useState(false);
+	const router = useRouter();
 
 	useEffect(() => {
 		if (destination === 0) return;
@@ -73,7 +75,7 @@ const Nav = () => {
 
 		setDestination(Math.min(offset, height));
 		if (location.hash === `#${target}`) return;
-		history.replaceState(null, "", `#${target}`);
+		router.replace(`${location.pathname}#${target}`, { scroll: false });
 	};
 
 	return (
