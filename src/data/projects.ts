@@ -186,48 +186,61 @@ export const projects: ProjectData[] = [
 	},
 	{
 		list: {
-			format: "landscape",
-			title: "Exposition Interactive",
-			description: "Apprendre de manière ludique le travail des draveurs.",
+			format: "portrait",
+			title: "Jeu éducatif",
+			description: "Dix segments d'animation interactive et de jeu pour sensibiliser les jeunes à la sécurité routière.",
 			media: {
 				type: "image",
-				src: "/projects/_placeholder/500.png",
-				alt: "",
+				src: "/projects/_SAAQ/SAAQ_0.png",
+				alt: "Axelle et Pitchouf avec le brigadier",
 			},
 		},
-		url: "carbone-scolere",
+		url: "axelle-et-pitchouf",
 		hero: [
 			{
 				type: "image",
-				src: "/projects/_placeholder/500.png",
-				alt: "",
+				src: "/projects/_SAAQ/SAAQ_1.jpg",
+				alt: "Axelle et Pitchouf",
 			},
 			{
-				type: "video",
-				src: [
-					"/projects/_placeholder/169.mp4",
-					"/projects/_placeholder/169.webm",
-				],
-				alt: "",
+				type: "image",
+				src: 
+					"/projects/_SAAQ/SAAQ_2.jpg",
+				alt: "Scénario près d'un bus scolaire",
 			},
 		],
-		title: "Carbone Scol'ère",
+		title: "2021 - Axelle et Pitchouf: en marche!",
 		description: ["..."],
-		year: 2023,
-		index: 2,
-		client: "Le site historique T.E.Draper",
-		collab: "Cécile Subra (scénographe)",
-		tags: ["Exposition Interactive", "Design UI"],
+		year: 2020,
+		index: 3,
+		client: "Société de l’assurance automobile du québec (SAAQ)",
+		collab: "ÉduGénie",
+		tags: ["Web", "Design UI", "Graphisme"],
 		screenshots: [
 			{
 				left: {
+					description: {
+						title: "",
+						text: "...",
+					},
+				},
+				right: {
 					media: {
 						type: "video",
 						src: [
-							"/projects/_placeholder/169.mp4",
-							"/projects/_placeholder/169.webm",
+							"/projects/_SAAQ/SAAQ_3.mp4",
+							"/projects/_SAAQ/SAAQ_3.webm",
 						],
-						alt: "Alerte à l'embâcle accueil",
+						alt: "Axelle regarde à droite, à gauche et en arrière avant de traverser",
+					},
+				},
+			},
+			{
+				left: {
+					media: {
+						type: "image",
+						src: "/projects/_SAAQ/SAAQ_4.png",
+						alt: "Embâcle côté rivière",
 					},
 				},
 				right: {
@@ -237,33 +250,11 @@ export const projects: ProjectData[] = [
 					},
 				},
 			},
-			{
-				left: {
-					media: {
-						type: "video",
-						src: [
-							"/projects/_placeholder/169.mp4",
-							"/projects/_placeholder/169.webm",
-						],
-						alt: "Embâcle côté rivière",
-					},
-				},
-				right: {
-					media: {
-						type: "video",
-						src: [
-							"/projects/_placeholder/169.mp4",
-							"/projects/_placeholder/169.webm",
-						],
-						alt: "Compteur côté rive",
-					},
-				},
-			},
 		],
 	},
 	{
 		list: {
-			format: "portrait",
+			format: "landscape",
 			title: "Exposition Interactive",
 			description: "Apprendre de manière ludique le travail des draveurs.",
 			media: {
@@ -272,7 +263,7 @@ export const projects: ProjectData[] = [
 				alt: "",
 			},
 		},
-		url: "axelle-et-pitchouf",
+		url: "carbone-scolère",
 		hero: [
 			{
 				type: "image",
@@ -285,10 +276,10 @@ export const projects: ProjectData[] = [
 				alt: "",
 			},
 		],
-		title: "SAAQ",
+		title: "Carbone Scol'ère",
 		description: ["..."],
 		year: 2021,
-		index: 3,
+		index: 2,
 		client: "Le site historique T.E.Draper",
 		collab: "Cécile Subra (scénographe)",
 		tags: ["Exposition Interactive", "Design UI"],
@@ -344,7 +335,7 @@ export const projects: ProjectData[] = [
 			media: {
 				type: "image",
 				src: "/projects/_UPA/UPA_kasscrout_0.png",
-				alt: "",
+				alt: "kasscrout",
 			},
 		},
 		url: "kasscrout",
@@ -352,12 +343,12 @@ export const projects: ProjectData[] = [
 			{
 				type: "image",
 				src: "/projects/_UPA/UPA_kasscrout_1.PNG",
-				alt: "",
+				alt: "le chef avec le kasscrout et le joueur dans une des régions",
 			},
 			{
 				type: "image",
 				src: "/projects/_UPA/UPA_kasscrout_2.PNG",
-				alt: "",
+				alt: "Menu des missions",
 			},
 		],
 		title: "Kasscrout",
