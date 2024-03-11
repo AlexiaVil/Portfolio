@@ -47,7 +47,7 @@ export const Home = () => {
 			<ShapeHomeBottomFilled />
 			<ShapeHomeBottom />
 			<section className={styles.intro}>
-				<Heading>Allo, je suis Alexia, UI designer</Heading>
+				<Heading>Alexia Villiez, UI designer</Heading>
 				<p className={styles.introText}>
 				À Montréal depuis 2019, j’ai à cœur de créer des expériences attractives et interactives pour tous les publics. J’ai toujours aimer créer, inventer, apprendre et imaginer depuis toute petite. Voici quelques projets sur lesquels j’ai pu travailler, au cours des dernières années.
 				</p>
@@ -61,7 +61,7 @@ export const Home = () => {
 			>
 				<Heading>Contact</Heading>
 				<p className={styles.contactText}>
-					Envie de collaborer ou simplement de discuter de votre projet?
+					Pour en savoir plus sur mon parcours, n’hésitez pas à regarder mon cv.
 					N’hésitez pas à me contacter.
 				</p>
 				<Button href="#" target="_self" rel="noopener noreferrer">
