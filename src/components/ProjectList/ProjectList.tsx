@@ -14,36 +14,44 @@ const DesktopProjectList = () => (
 		data-section="projects"
 	>
 		<div className={styles.projectsLeft}>
-			{projects.map((project: ProjectData, i: number) => {
-				if (i % 2 === 0) {
-					return (
-						<Project
-							key={project.title}
-							align="right"
-							format={project.list.format}
-							{...project}
-						/>
-					);
-				}
+			{projects
+				.sort((a: ProjectData, b: ProjectData) => {
+					return a.index - b.index;
+				})
+				.map((project: ProjectData, i: number) => {
+					if (i % 2 === 0) {
+						return (
+							<Project
+								key={project.title}
+								align="right"
+								format={project.list.format}
+								{...project}
+							/>
+						);
+					}
 
-				return null;
-			})}
+					return null;
+				})}
 		</div>
 		<div className={styles.projectsRight}>
-			{projects.map((project: ProjectData, i: number) => {
-				if (i % 2 !== 0) {
-					return (
-						<Project
-							key={project.title}
-							align="left"
-							format={project.list.format}
-							{...project}
-						/>
-					);
-				}
+			{projects
+				.sort((a: ProjectData, b: ProjectData) => {
+					return a.index - b.index;
+				})
+				.map((project: ProjectData, i: number) => {
+					if (i % 2 !== 0) {
+						return (
+							<Project
+								key={project.title}
+								align="left"
+								format={project.list.format}
+								{...project}
+							/>
+						);
+					}
 
-				return null;
-			})}
+					return null;
+				})}
 		</div>
 	</section>
 );
