@@ -36,6 +36,7 @@ export interface ProjectData {
 
 export const projects: ProjectData[] = [
 	{
+		//PAC
 		list: {
 			format: "portrait",
 			title: "Exposition Interactive",
@@ -105,6 +106,7 @@ export const projects: ProjectData[] = [
 		],
 	},
 	{
+		//TE draper
 		list: {
 			format: "landscape",
 			title: "Exposition Interactive",
@@ -185,6 +187,7 @@ export const projects: ProjectData[] = [
 		],
 	},
 	{
+		//SAAQ
 		list: {
 			format: "portrait",
 			title: "Jeu éducatif",
@@ -209,9 +212,9 @@ export const projects: ProjectData[] = [
 				alt: "Scénario près d'un bus scolaire",
 			},
 		],
-		title: "2021 - Axelle et Pitchouf: en marche!",
+		title: "Axelle et Pitchouf: en marche!",
 		description: ["..."],
-		year: 2020,
+		year: 2021,
 		index: 3,
 		client: "Société de l’assurance automobile du québec (SAAQ)",
 		collab: "ÉduGénie",
@@ -253,6 +256,7 @@ export const projects: ProjectData[] = [
 		],
 	},
 	{
+		//Carbone scolere
 		list: {
 			format: "landscape",
 			title: "Exposition Interactive",
@@ -278,7 +282,7 @@ export const projects: ProjectData[] = [
 		],
 		title: "Carbone Scol'ère",
 		description: ["..."],
-		year: 2021,
+		year: 2023,
 		index: 2,
 		client: "Le site historique T.E.Draper",
 		collab: "Cécile Subra (scénographe)",
@@ -327,6 +331,7 @@ export const projects: ProjectData[] = [
 		],
 	},
 	{
+		//UPA
 		list: {
 			format: "landscape",
 			title: "Jeu numérique",
