@@ -231,8 +231,8 @@ export const projects: ProjectData[] = [
 					media: {
 						type: "video",
 						src: [
-							"/projects/_SAAQ/SAAQ_3.mp4",
-							"/projects/_SAAQ/SAAQ_3.webm",
+							"/projects/_SAAQ/SAAQ_3_1.mp4",
+							"/projects/_SAAQ/SAAQ_3_1.webm",
 						],
 						alt: "Axelle regarde à droite, à gauche et en arrière avant de traverser",
 					},
