@@ -267,7 +267,7 @@ export const projects: ProjectData[] = [
 				alt: "",
 			},
 		},
-		url: "carbone-scolère",
+		url: "carbone-scolere",
 		hero: [
 			{
 				type: "image",
