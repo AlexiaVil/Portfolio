@@ -45,32 +45,33 @@ export const projects: ProjectData[] = [
 			media: {
 				type: "image",
 				src: "/projects/_PAC/PAC_accueil.png",
-				alt: "",
+				alt: "Des lettres f dans plusieurs formes et couleurs",
 			},
 		},
 		url: "le-francais-une-langue-a-celebrer",
 		hero: [
 			{
 				type: "image",
-				src: "/projects/_PAC/PAC_Image1_credit.png",
-				alt: "",
+				src: "/projects/_PAC/PAC_Image1.png",
+				alt: "Deux personnes jouent à la table interactive de l'exposition",
 			},
 			{
 				type: "image",
-				src: "/projects/_PAC/PAC_Image2_credit.png",
-				alt: "",
+				src: "/projects/_PAC/PAC_Image2.png",
+				alt: "Deux personnes jouent au questionnaire de l'exposition",
 			},
 		],
 		title: "Le français, une langue à célébrer!",
 		description: [
 			"Pour le 45ème anniversaire de la Charte de la langue française, le mandat était de concevoir et réaliser une exposition interactive sur la langue française au Québec et en Amérique du Nord. Le résultat, une exposition ludique, colorée, divisée en plusieurs zones, avec des vidéos, un jeu de questionnaire, un karaoké et des jeux interactifs numériques.",
-			"En collaboration avec La Bande à Paul, en charge de la direction artistique de l'exposition, CREO avait en charge la direction artistique des huit interactifs.",
-			"Les objectifs : Garantir la cohérence de l'interface avec le contenu et l'univers de l'exposition. Respecter l'identité visuelle de l'exposition (épurée et couleurs vives). Concevoir des interfaces intuitives, attrayante et accessible à un public familiale.",
+			"En collaboration avec La Bande à Paul en charge de la scénographie de l'exposition, CREO avait en charge les huit dispositifs interactifs.",
+			"Les objectifs : garantir la cohérence de l'interface avec le contenu et l'univers de l'exposition, respecter l'identité visuelle de l'exposition (épurée et couleurs vives), concevoir des interfaces intuitives, attrayante et accessible à un public familiale.",
+			"J'ai été amenée à concevoir visuellement deux des interactifs de l'exposition, en collaborant avec la Bande à Paul pour le contenu.",
 		],
 		year: 2023,
 		index: 0,
 		client: "Pointe-à-Callière, cité d'archéologie et d'histoire de Montréal",
-		collab: "La bande à Paul",
+		collab: "La bande à Paul (scénographie)",
 		tags: ["Exposition Interactive", "Design UI"],
 		screenshots: [
 			{
@@ -78,7 +79,7 @@ export const projects: ProjectData[] = [
 					media: {
 						type: "image",
 						src: "/projects/_PAC/PAC_Image3.png",
-						alt: "Accents d'Amériques",
+						alt: "L'interface du jeu Accents d'Amériques",
 					},
 				},
 				right: {
@@ -99,7 +100,38 @@ export const projects: ProjectData[] = [
 					media: {
 						type: "image",
 						src: "/projects/_PAC/PAC_Image4.png",
-						alt: "Vite sur tes patins!",
+						alt: "L'interface du questionnaire Vite sur tes patins!",
+					},
+				},
+			},
+			{
+				left: {
+					description: {
+						title: "La charte graphique des interactifs, des panneaux de l'exposition",
+						text: "Voici la déclinaison de la charte graphique numérique des cinq zones de l'exposition, réalisée par le directeur artistique du projet chez CREO, à la suite de la scénographie et la charte des couleurs produite par La Bande à Paul. Également voici des premières ébauches de la table interactive et du jeu questionnaire, sur lesquels j'ai pu travailler dans ce projet.",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_PAC/PAC_Image5.png",
+						alt: "Les couleurs des zones de l'exposition",
+					},
+				},
+			},
+			{
+				left: {
+					media: {
+						type: "image",
+						src: "/projects/_PAC/PAC_Image6.png",
+						alt: "Les anciennes versions de l'interface de Accents d'Amérique",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_PAC/PAC_Image7.png",
+						alt: "Les anciennes versions de l'interface de Vite sur tes patins!",
 					},
 				},
 			},
