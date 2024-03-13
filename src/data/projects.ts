@@ -259,44 +259,41 @@ export const projects: ProjectData[] = [
 		//Carbone scolere
 		list: {
 			format: "landscape",
-			title: "Exposition Interactive",
-			description: "Apprendre de manière ludique le travail des draveurs.",
+			title: "Jeu en ligne pour les écoles",
+			description: "Adopter des comportements écoresponsables dans la lutte contre les changements climatiques.",
 			media: {
 				type: "image",
-				src: "/projects/_placeholder/500.png",
-				alt: "",
+				src: "/projects/_Carbone/Carbone_0.png",
+				alt: "L'île de la savane du jeu",
 			},
 		},
 		url: "carbone-scolere",
 		hero: [
 			{
 				type: "image",
-				src: "/projects/_placeholder/500.png",
-				alt: "",
+				src: "/projects/_Carbone/Carbone_1.png",
+				alt: "L'île de la jungle dans le jeu",
 			},
 			{
 				type: "image",
-				src: "/projects/_placeholder/500.png",
-				alt: "",
+				src: "/projects/_Carbone/Carbone_2.png",
+				alt: "Toutes les îles du jeu, certaines sont barrées",
 			},
 		],
-		title: "Carbone Scol'ère",
+		title: "Carbone Scol'ère jeu en ligne",
 		description: ["..."],
 		year: 2023,
 		index: 2,
-		client: "Le site historique T.E.Draper",
-		collab: "Cécile Subra (scénographe)",
-		tags: ["Exposition Interactive", "Design UI"],
+		client: "COOP FA et le programme Carbone Scol'ère",
+		collab: "",
+		tags: ["Web", "Design UI", "Illustrations"],
 		screenshots: [
 			{
 				left: {
 					media: {
-						type: "video",
-						src: [
-							"/projects/_placeholder/169.mp4",
-							"/projects/_placeholder/169.webm",
-						],
-						alt: "Alerte à l'embâcle accueil",
+						type: "image",
+						src: "/projects/_Carbone/Carbone_3.png",
+						alt: "Le premier plateformer",
 					},
 				},
 				right: {
@@ -308,23 +305,32 @@ export const projects: ProjectData[] = [
 			},
 			{
 				left: {
-					media: {
-						type: "video",
-						src: [
-							"/projects/_placeholder/169.mp4",
-							"/projects/_placeholder/169.webm",
-						],
-						alt: "Embâcle côté rivière",
+					description: {
+						title: "",
+						text: "...",
 					},
 				},
 				right: {
 					media: {
-						type: "video",
-						src: [
-							"/projects/_placeholder/169.mp4",
-							"/projects/_placeholder/169.webm",
-						],
-						alt: "Compteur côté rive",
+						type: "image",
+						src: "/projects/_Carbone/Carbone_4.png",
+						alt: "Le design system",
+					},
+				},
+			},
+			{
+				left: {
+					media: {
+						type: "image",
+						src: "/projects/_Carbone/Carbone_5.png",
+						alt: "Le deuxième plateformer, avec la récolte d'objets",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_Carbone/Carbone_6.png",
+						alt: "L'ensemble du dernier plateformer",
 					},
 				},
 			},
