@@ -107,7 +107,7 @@ export const projects: ProjectData[] = [
 			{
 				left: {
 					description: {
-						title: "...",
+						title: "",
 						text: "Voici la déclinaison de la charte graphique numérique des cinq zones de l'exposition, réalisée par le directeur artistique du projet chez CREO, à la suite de la scénographie et la charte des couleurs produite par La Bande à Paul. Également voici des premières ébauches de la table interactive et du jeu questionnaire, sur lesquels j'ai pu travailler dans ce projet.",
 					},
 				},
