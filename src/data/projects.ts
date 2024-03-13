@@ -190,7 +190,7 @@ export const projects: ProjectData[] = [
 				right: {
 					description: {
 						title: "",
-						text: "Creo a donc imaginé un jeu collaboratif, amusant et interactif pour faire découvrir cet univers aux plus jeunes. Avec une scénographie qui rappelle une rive, les jeunes doivent traverser la rivière sur des billes de bois en mousse poser au sol, pour aller défaire l'embâcle de l'autre côté de la rive le plus vite possible.",
+						text: "Creo a imaginé un jeu collaboratif, amusant et interactif pour faire découvrir cet univers aux plus jeunes. Avec un dispositif qui rappelle une rive, les jeunes doivent traverser la rivière sur des billes de bois en mousse poser au sol, pour aller défaire l'embâcle sur les écrans de l'autre côté de la rive, le plus vite possible. J'ai participé à ce projet en tant que UI designer pour les interfaces du jeu. Les objectifs : faire correspondre les couleurs du jeu avec celles de la scénographie, faire en sorte que les interfaces soient compréhensibles et intuitives pour le public visé.",
 					},
 				},
 			},
