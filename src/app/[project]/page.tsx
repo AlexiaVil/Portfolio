@@ -21,8 +21,12 @@ export default function Page({
 		return <div>Project not found</div>;
 	}
 
-	const previousProject = projects[projectData.index - 1]?.url;
-	const nextProject = projects[projectData.index + 1]?.url;
+	const previousProject = projects.find(
+		(p) => p.index === projectData.index - 1,
+	)?.url;
+	const nextProject = projects.find(
+		(p) => p.index === projectData.index + 1,
+	)?.url;
 
 	const Hero = ({ className }: { className: string }) => (
 		<div className={[styles.hero, className].join(" ")}>
