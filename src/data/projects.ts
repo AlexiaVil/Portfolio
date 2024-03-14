@@ -245,21 +245,18 @@ export const projects: ProjectData[] = [
 			},
 		],
 		title: "Axelle et Pitchouf: en marche!",
-		description: ["..."],
+		description: [
+			"Le mandat était de créer un outil éducatif interactif, pour sensibiliser les jeunes de 5 à 8 ans à la sécurité routière et influencer leur attitude, afin qu'ils adoptent des comportements plus prudents dans leurs déplacements vers l'école, que ce soit à pied ou en autobus scolaire.",
+			"CREO a développé dix segments d'animation interactive, dans un univers coloré, mettant en avant les mesures de prudence élémentaire pour leur faire prendre conscience des conséquences. Chaque capsule est composée d'une vidéo et d'un jeu interactif qui permet aux enfants de mettre en pratique les notions de sécurité routière apprises.",
+		],
 		year: 2021,
 		index: 3,
 		client: "Société de l'assurance automobile du québec (SAAQ)",
-		collab: "ÉduGénie",
+		collab: "",
 		tags: ["Web", "Design UI", "Graphisme"],
 		screenshots: [
 			{
 				left: {
-					description: {
-						title: "",
-						text: "...",
-					},
-				},
-				right: {
 					media: {
 						type: "video",
 						src: [
@@ -269,19 +266,26 @@ export const projects: ProjectData[] = [
 						alt: "Axelle regarde à droite, à gauche et en arrière avant de traverser",
 					},
 				},
+				right: {
+					description: {
+						title: "",
+						text: "L'objectif étant de créer des interfaces à la fois ludiques et informatives pour un jeune public. À travers ce projet, j'ai été amené à travailler sur des interfaces du jeu (site web, popups, mini-jeux), sur des illustrations, également faire du tracking de certains éléments dans les vidéos d'animation et collaborer avec la directrice artistique et l'artiste 3D du projet.",
+					},
+				},
 			},
 			{
 				left: {
 					media: {
 						type: "image",
 						src: "/projects/_SAAQ/SAAQ_4.png",
-						alt: "Embâcle côté rivière",
+						alt: "Mockup sur un ordinateur d'un popup du jeu",
 					},
 				},
 				right: {
-					description: {
-						title: "",
-						text: "...",
+					media: {
+						type: "image",
+						src: "/projects/_SAAQ/SAAQ_5.png",
+						alt: "Visuels en noir et blanc de l'interface du site web",
 					},
 				},
 			},
