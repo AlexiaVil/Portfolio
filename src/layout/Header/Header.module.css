@@ -20,6 +20,10 @@
 	text-decoration: none;
 }
 
+.headerSlot::after {
+	display: none;
+}
+
 .logo {
 	height: 23px;
 }
