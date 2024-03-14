@@ -277,15 +277,15 @@ export const projects: ProjectData[] = [
 				left: {
 					media: {
 						type: "image",
-						src: "/projects/_SAAQ/SAAQ_4.png",
-						alt: "Mockup sur un ordinateur d'un popup du jeu",
+						src: "/projects/_SAAQ/SAAQ_5.png",
+						alt: "Visuels en noir et blanc de l'interface du site web",
 					},
 				},
 				right: {
 					media: {
 						type: "image",
-						src: "/projects/_SAAQ/SAAQ_5.png",
-						alt: "Visuels en noir et blanc de l'interface du site web",
+						src: "/projects/_SAAQ/SAAQ_4.png",
+						alt: "Mockup sur un ordinateur d'un popup du jeu",
 					},
 				},
 			},
