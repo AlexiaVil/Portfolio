@@ -407,7 +407,7 @@ export const projects: ProjectData[] = [
 		],
 		year: 2020,
 		index: 4,
-		client: "L’union des producteurs agricoles (UPA)",
+		client: "L'union des producteurs agricoles (UPA)",
 		tags: ["Web", "Design UI", "Illustration", "Animation"],
 		screenshots: [
 			{
@@ -424,22 +424,7 @@ export const projects: ProjectData[] = [
 				right: {
 					description: {
 						title: "",
-						text: "J'ai participé à ce projet en créant certaines des illustrations, des animations, des interfaces de jeu, en déclinant le style visuel créer par la directrice artistique du projet.",
-					},
-				},
-			},
-			{
-				left: {
-					description: {
-						title: "",
-						text: "Le jeu est accessible sur différents supports à travers un site internet, qui permet aux parents de suivre l'évolution de leurs enfants et de regrouper toutes les informations des agriculteurs et producteurs représentés dans le jeu.",
-					},
-				},
-				right: {
-					media: {
-						type: "image",
-						src: "/projects/_UPA/UPA_kasscrout_4.png",
-						alt: "Mockup du jeu sur laptop et téléphone",
+						text: "Le jeu est accessible sur différents supports à travers un site internet, qui permet aux parents de suivre l'évolution de leurs enfants et de regrouper toutes les informations des agriculteurs et producteurs représentés dans le jeu. J'ai participé à ce projet en créant certaines des illustrations, des animations et des interfaces de jeu en déclinant le style visuel créer par la directrice artistique du projet.",
 					},
 				},
 			},
@@ -452,9 +437,10 @@ export const projects: ProjectData[] = [
 					},
 				},
 				right: {
-					description: {
-						title: "",
-						text: "...",
+					media: {
+						type: "image",
+						src: "/projects/_UPA/UPA_kasscrout_4.png",
+						alt: "Mockup du jeu sur laptop et téléphone",
 					},
 				},
 			},
