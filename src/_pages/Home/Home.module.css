@@ -28,6 +28,7 @@
 @media (max-width: 1000px) {
 	.intro {
 		width: 60%;
+		margin: 200px 0 200px auto;
 	}
 }
 
