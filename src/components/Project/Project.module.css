@@ -76,7 +76,7 @@
 @media (max-width: 1024px) {
 	.portrait {
 		width: 100%;
-		max-width: 315px;
-		height: 203px;
+		max-width: 203px;
+		height: 315px;
 	}
 }
