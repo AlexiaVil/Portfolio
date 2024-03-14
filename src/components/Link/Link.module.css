@@ -7,6 +7,10 @@
 	position: relative;
 }
 
+.link:hover {
+	color: var(--blue);
+}
+
 .link::after {
 	content: "";
 	display: block;

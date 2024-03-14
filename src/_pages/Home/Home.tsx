@@ -8,6 +8,7 @@ import {
 import Button from "@/components/Button/Button";
 import { ProjectList } from "@/components/ProjectList/ProjectList";
 import { Metadata } from "next";
+import Link from "@/components/Link/Link";
 
 export const metadata: Metadata = {
 	title: "Alexia Villiez - UI Designer",
@@ -49,7 +50,11 @@ export const Home = () => {
 			<section className={styles.intro}>
 				<Heading>Alexia Villiez, UI designer</Heading>
 				<p className={styles.introText}>
-				À Montréal depuis 2019, j’ai à cœur de créer des expériences attractives et interactives pour tous les publics. J’ai toujours aimer créer, inventer, apprendre et imaginer. Voici quelques projets sur lesquels j’ai pu travailler, au cours des dernières années.
+					À Montréal depuis 2019, j’ai à cœur de créer des expériences
+					attractives et interactives pour tous les publics. J’ai toujours aimer
+					créer, inventer, apprendre et imaginer depuis toute petite. Voici
+					quelques projets sur lesquels j’ai pu travailler, au cours des
+					dernières années.
 				</p>
 			</section>
 			<div id="projects" className={styles.scroll} />
@@ -61,9 +66,38 @@ export const Home = () => {
 			>
 				<Heading>Contact</Heading>
 				<p className={styles.contactText}>
-				Pour plus de détails sur mon parcours, n’hésitez pas à regarder mon cv ou mon profil linkedin. Pour voir d’autres de mes réalisations, rendez-vous sur mon béhance. Je suis toujours attentive aux nouveaux projets et opportunités. N’hésitez pas à me contacter ✨
+					Pour plus de détails sur mon parcours, n’hésitez pas à regarder mon{" "}
+					<a
+						href="/CV_AlexiaVilliez.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						CV
+					</a>{" "}
+					ou mon profil{" "}
+					<a
+						href="https://www.linkedin.com/in/alexia-villiez-3ba112136"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						LinkedIn
+					</a>
+					. Pour voir d’autres de mes réalisations, rendez-vous sur mon{" "}
+					<a
+						href="https://www.behance.net/alexvilliee70a"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Behance
+					</a>
+					. Je suis toujours attentive aux nouveaux projets et opportunités.
+					N’hésitez pas à me contacter ✨
 				</p>
-				<Button href="/public/CV_AlexiaVilliez.pdf" target="_blank" rel="noopener noreferrer">
+				<Button
+					href="/CV_AlexiaVilliez.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Mon CV
 				</Button>
 			</section>

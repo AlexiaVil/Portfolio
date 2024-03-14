@@ -12,6 +12,10 @@
 	text-decoration: none;
 }
 
+.button::after {
+	display: none;
+}
+
 .disabled {
 	pointer-events: none;
 	color: var(--yellow-dark);
