@@ -52,7 +52,7 @@ export const Home = () => {
 				<p className={styles.introText}>
 					À Montréal depuis 2019, j’ai à cœur de créer des expériences
 					attractives et interactives pour tous les publics. J’ai toujours aimer
-					créer, inventer, apprendre et imaginer depuis toute petite. Voici
+					créer, inventer, apprendre et imaginer. Voici
 					quelques projets sur lesquels j’ai pu travailler, au cours des
 					dernières années.
 				</p>
