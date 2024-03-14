@@ -61,11 +61,10 @@ export const Home = () => {
 			>
 				<Heading>Contact</Heading>
 				<p className={styles.contactText}>
-					Pour en savoir plus sur mon parcours, n’hésitez pas à regarder mon cv.
-					N’hésitez pas à me contacter.
+				Pour plus de détails sur mon parcours, n’hésitez pas à regarder mon cv ou mon profil linkedin. Pour voir d’autres de mes réalisations, rendez-vous sur mon béhance. Je suis toujours attentive aux nouveaux projets et opportunités. N’hésitez pas à me contacter ✨
 				</p>
-				<Button href="#" target="_self" rel="noopener noreferrer">
-					Télécharger mon CV
+				<Button href="/public/CV_AlexiaVilliez.pdf" target="_blank" rel="noopener noreferrer">
+					Mon CV
 				</Button>
 			</section>
 		</div>
