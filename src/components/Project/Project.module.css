@@ -7,6 +7,10 @@
 	color: var(--white);
 }
 
+.project::after {
+	display: none;
+}
+
 .project:not(:last-child) {
 	margin-bottom: 9.25rem;
 }
@@ -39,9 +43,10 @@
 }
 
 .portrait {
-	width: 100%;
+	width: 56%;
 	max-width: 315px;
-	height: 480px;
+	max-height: 480px;
+	aspect-ratio: 315 / 480;
 }
 
 .link {
