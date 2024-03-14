@@ -72,3 +72,11 @@
 		align-self: flex-end;
 	}
 }
+
+@media (max-width: 1024px) {
+	.portrait {
+		width: 100%;
+		max-width: 315px;
+		height: 203px;
+	}
+}
