@@ -248,7 +248,7 @@ export const projects: ProjectData[] = [
 		description: ["..."],
 		year: 2021,
 		index: 3,
-		client: "Société de l’assurance automobile du québec (SAAQ)",
+		client: "Société de l'assurance automobile du québec (SAAQ)",
 		collab: "ÉduGénie",
 		tags: ["Web", "Design UI", "Graphisme"],
 		screenshots: [
@@ -313,7 +313,9 @@ export const projects: ProjectData[] = [
 			},
 		],
 		title: "Carbone Scol'ère jeu en ligne",
-		description: ["..."],
+		description: [
+			"Carbone Scol'ère souhaitait sensibiliser les jeunes aux changements climatiques et qu'ils adoptent des comportements écoresponsables à travers un jeu en ligne disponible dans les écoles.",
+			"Le jeu permet l'apprentissage par l'enquête, en se posant des questions sur les thèmes du changement climatique, comme les gaz à effet de serre, la consommation, l'énergie et le transport, la gestion des matières résiduelles. Le joueur est plongé dans un monde d'extraterrestre constitué de cinq îles (savane, tropical, jungle, glacier, ...), dans lequel il pourra enquêter sur les GES et découvrir leur impact sur la planète.",],
 		year: 2023,
 		index: 2,
 		client: "COOP FA et le programme Carbone Scol'ère",
@@ -331,7 +333,7 @@ export const projects: ProjectData[] = [
 				right: {
 					description: {
 						title: "",
-						text: "...",
+						text: "Dans un univers coloré et très engageant, le joueur doit aller parler aux habitants de l'île et répondre à des questions, associer des cartes, associer des items au sein d'un plateformer, pour faire prendre conscience aux élèves de bonnes actions à adopter pour avoir de bons comportements écoresponsables.",
 					},
 				},
 			},
@@ -339,7 +341,7 @@ export const projects: ProjectData[] = [
 				left: {
 					description: {
 						title: "",
-						text: "...",
+						text: "Dans ce projet, j'ai été amené à concevoir les visuels des interactions UI (boutons, icônes) suite à la charte graphique établi par la directrice artistique du projet. Également l'interface et les niveaux des quatre plateformers (le placement des tuiles, le UI), en collaboration avec les programmeurs.",
 					},
 				},
 				right: {
