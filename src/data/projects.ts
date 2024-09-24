@@ -35,8 +35,8 @@ export interface ProjectData {
 }
 
 export const projects: ProjectData[] = [
-	{
 		//PAC
+	{
 		list: {
 			format: "portrait",
 			title: "Exposition Interactive",
@@ -137,8 +137,8 @@ export const projects: ProjectData[] = [
 			},
 		],
 	},
-	{
 		//TE draper
+	{
 		list: {
 			format: "landscape",
 			title: "Exposition Interactive",
@@ -218,8 +218,160 @@ export const projects: ProjectData[] = [
 			},
 		],
 	},
+		//Carbone scolere
 	{
+				list: {
+					format: "landscape",
+					title: "Jeu en ligne pour les écoles",
+					description: "Adopter des comportements écoresponsables dans la lutte contre les changements climatiques.",
+					media: {
+						type: "image",
+						src: "/projects/_Carbone/Carbone_0.png",
+						alt: "L'île de la savane du jeu",
+					},
+				},
+				url: "carbone-scolere",
+				hero: [
+					{
+						type: "image",
+						src: "/projects/_Carbone/Carbone_1.png",
+						alt: "L'île de la jungle dans le jeu",
+					},
+					{
+						type: "image",
+						src: "/projects/_Carbone/Carbone_2.png",
+						alt: "Toutes les îles du jeu, certaines sont barrées",
+					},
+				],
+				title: "Carbone Scol'ère jeu en ligne",
+				description: [
+					"Carbone Scol'ère souhaitait sensibiliser les jeunes aux changements climatiques et qu'ils adoptent des comportements écoresponsables à travers un jeu en ligne disponible dans les écoles.",
+					"Le jeu permet l'apprentissage par l'enquête, en se posant des questions sur les thèmes du changement climatique, comme les gaz à effet de serre, la consommation, l'énergie et le transport, la gestion des matières résiduelles. Le joueur est plongé dans un monde d'extraterrestre constitué de cinq îles (savane, tropical, jungle, glacier, ...), dans lequel il pourra enquêter sur les GES et découvrir leur impact sur la planète.",],
+				year: 2023,
+				index: 2,
+				client: "COOP FA et le programme Carbone Scol'ère",
+				collab: "",
+				tags: ["Web", "Design UI", "Illustrations"],
+				screenshots: [
+					{
+						left: {
+							media: {
+								type: "image",
+								src: "/projects/_Carbone/Carbone_3.png",
+								alt: "Le premier plateformer",
+							},
+						},
+						right: {
+							description: {
+								title: "",
+								text: "Dans un univers coloré et très engageant, le joueur doit aller parler aux habitants de l'île et répondre à des questions, associer des cartes, associer des items au sein d'un plateformer, pour faire prendre conscience aux élèves de bonnes actions à adopter pour avoir de bons comportements écoresponsables.",
+							},
+						},
+					},
+					{
+						left: {
+							description: {
+								title: "",
+								text: "Dans ce projet, j'ai été amené à concevoir les visuels des interactions UI (boutons, icônes) suite à la charte graphique établi par la directrice artistique du projet. Également l'interface et les niveaux des quatre plateformers (le placement des tuiles, le UI), en collaboration avec les programmeurs.",
+							},
+						},
+						right: {
+							media: {
+								type: "image",
+								src: "/projects/_Carbone/Carbone_4.png",
+								alt: "Le design system",
+							},
+						},
+					},
+					{
+						left: {
+							media: {
+								type: "image",
+								src: "/projects/_Carbone/Carbone_5.png",
+								alt: "Le deuxième plateformer, avec la récolte d'objets",
+							},
+						},
+						right: {
+							media: {
+								type: "image",
+								src: "/projects/_Carbone/Carbone_6.png",
+								alt: "L'ensemble du dernier plateformer",
+							},
+						},
+					},
+				],
+	},
+		//CSMOCGQ
+	{
+		list: {
+			format: "portrait",
+			title: "Questionnaire en ligne",
+			description: "Jeu en ligne multiplateforme pour découvrir les métiers du secteur des communications graphiques.",
+			media: {
+				type: "image",
+				src: "/projects/_CSMOCGQ/CSMOCGQ_0.png",
+				alt: "Liste de métiers",
+			},
+		},
+		url: "createur-impact",
+		hero: [
+			{
+				type: "image",
+				src: "/projects/_CSMOCGQ/CSMOCGQ_1.png",
+				alt: "Interface d'une fiche métier sur ordinateur",
+			},
+			{
+				type: "image",
+				src: "/projects/_CSMOCGQ/CSMOCGQ_2.png",
+				alt: "Interface des résultats du questionnaire sur ordinateur",
+			},
+		],
+		title: "Serais-tu un créateur d'impact sans le savoir?",
+		description: [
+			"C'est un jeu en ligne multiplateforme qui vise à engager le public du secondaire et les adultes souhaitant retourner aux études dans la découverte des métiers du secteur des communications graphiques.",
+			"Le joueur répond à une série de questions qui l'orientent vers des formations ou des emplois qui conviendraient à son profil.",
+		],
+		year: 2022,
+		index: 3,
+		client: "Graficompétences (comité sectoriel de main d'oeuvre des communications graphique du québec - csmocgq)",
+		collab: "",
+		tags: ["Web", "Design UI"],
+		screenshots: [
+			{
+				left: {
+					media: {
+						type: "image",
+						src:"/projects/_CSMOCGQ/CSMOCGQ_3.png",
+						alt: "Mockup du projet en version ordinateur et téléphone",
+					},
+				},
+				right: {
+					description: {
+						title: "",
+						text: "En me basant sur la charte graphique déjà existante de Créateurs d'impact, l'objectif était de créer des interfaces attrayantes et intuitives pour tous les publics. J'ai essayé de garder et de réutiliser les motifs et textures visuelles de la charte graphique, comme le “+” du logo, ainsi que les formes géométriques, sans trop surcharger les interfaces.",
+					},
+				},
+			},
+			{
+				left: {
+					media: {
+						type: "image",
+						src: "/projects/_CSMOCGQ/CSMOCGQ_4.png",
+						alt: "Interface de connexion sur ordinateur",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_CSMOCGQ/CSMOCGQ_5.png",
+						alt: "Interface sur téléphone du questionnaire",
+					},
+				},
+			},
+		],
+	},
 		//SAAQ
+	{
 		list: {
 			format: "portrait",
 			title: "Jeu éducatif",
@@ -250,7 +402,7 @@ export const projects: ProjectData[] = [
 			"CREO a développé dix segments d'animation interactive, dans un univers coloré, mettant en avant les mesures de prudence élémentaire pour leur faire prendre conscience des conséquences. Chaque capsule est composée d'une vidéo et d'un jeu interactif qui permet aux enfants de mettre en pratique les notions de sécurité routière apprises.",
 		],
 		year: 2021,
-		index: 3,
+		index: 4,
 		client: "Société de l'assurance automobile du québec (SAAQ)",
 		collab: "",
 		tags: ["Web", "Design UI", "Graphisme"],
@@ -291,91 +443,8 @@ export const projects: ProjectData[] = [
 			},
 		],
 	},
-	{
-		//Carbone scolere
-		list: {
-			format: "landscape",
-			title: "Jeu en ligne pour les écoles",
-			description: "Adopter des comportements écoresponsables dans la lutte contre les changements climatiques.",
-			media: {
-				type: "image",
-				src: "/projects/_Carbone/Carbone_0.png",
-				alt: "L'île de la savane du jeu",
-			},
-		},
-		url: "carbone-scolere",
-		hero: [
-			{
-				type: "image",
-				src: "/projects/_Carbone/Carbone_1.png",
-				alt: "L'île de la jungle dans le jeu",
-			},
-			{
-				type: "image",
-				src: "/projects/_Carbone/Carbone_2.png",
-				alt: "Toutes les îles du jeu, certaines sont barrées",
-			},
-		],
-		title: "Carbone Scol'ère jeu en ligne",
-		description: [
-			"Carbone Scol'ère souhaitait sensibiliser les jeunes aux changements climatiques et qu'ils adoptent des comportements écoresponsables à travers un jeu en ligne disponible dans les écoles.",
-			"Le jeu permet l'apprentissage par l'enquête, en se posant des questions sur les thèmes du changement climatique, comme les gaz à effet de serre, la consommation, l'énergie et le transport, la gestion des matières résiduelles. Le joueur est plongé dans un monde d'extraterrestre constitué de cinq îles (savane, tropical, jungle, glacier, ...), dans lequel il pourra enquêter sur les GES et découvrir leur impact sur la planète.",],
-		year: 2023,
-		index: 2,
-		client: "COOP FA et le programme Carbone Scol'ère",
-		collab: "",
-		tags: ["Web", "Design UI", "Illustrations"],
-		screenshots: [
-			{
-				left: {
-					media: {
-						type: "image",
-						src: "/projects/_Carbone/Carbone_3.png",
-						alt: "Le premier plateformer",
-					},
-				},
-				right: {
-					description: {
-						title: "",
-						text: "Dans un univers coloré et très engageant, le joueur doit aller parler aux habitants de l'île et répondre à des questions, associer des cartes, associer des items au sein d'un plateformer, pour faire prendre conscience aux élèves de bonnes actions à adopter pour avoir de bons comportements écoresponsables.",
-					},
-				},
-			},
-			{
-				left: {
-					description: {
-						title: "",
-						text: "Dans ce projet, j'ai été amené à concevoir les visuels des interactions UI (boutons, icônes) suite à la charte graphique établi par la directrice artistique du projet. Également l'interface et les niveaux des quatre plateformers (le placement des tuiles, le UI), en collaboration avec les programmeurs.",
-					},
-				},
-				right: {
-					media: {
-						type: "image",
-						src: "/projects/_Carbone/Carbone_4.png",
-						alt: "Le design system",
-					},
-				},
-			},
-			{
-				left: {
-					media: {
-						type: "image",
-						src: "/projects/_Carbone/Carbone_5.png",
-						alt: "Le deuxième plateformer, avec la récolte d'objets",
-					},
-				},
-				right: {
-					media: {
-						type: "image",
-						src: "/projects/_Carbone/Carbone_6.png",
-						alt: "L'ensemble du dernier plateformer",
-					},
-				},
-			},
-		],
-	},
-	{
 		//UPA
+	{
 		list: {
 			format: "landscape",
 			title: "Jeu numérique",
@@ -406,7 +475,7 @@ export const projects: ProjectData[] = [
 			"Dans un univers absurde, loufoque et coloré, les joueurs doivent parcourir les régions du Québec, à la recherche des ingrédients demandés par le chef du Kasscrout. Le jeu est composé de 15 missions incluant plus de 50 mini-jeux.",
 		],
 		year: 2020,
-		index: 4,
+		index: 5,
 		client: "L'union des producteurs agricoles (UPA)",
 		tags: ["Web", "Design UI", "Illustration", "Animation"],
 		screenshots: [
