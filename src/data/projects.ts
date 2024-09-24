@@ -222,7 +222,7 @@ export const projects: ProjectData[] = [
 	{
 				list: {
 					format: "landscape",
-					title: "Jeu en ligne pour les écoles",
+					title: "Jeu en ligne ludo-éducatif",
 					description: "Adopter des comportements écoresponsables dans la lutte contre les changements climatiques.",
 					media: {
 						type: "image",
@@ -243,7 +243,7 @@ export const projects: ProjectData[] = [
 						alt: "Toutes les îles du jeu, certaines sont barrées",
 					},
 				],
-				title: "Carbone Scol'ère jeu en ligne",
+				title: "Carbone Scol'ère jeu ludo-éducatif",
 				description: [
 					"Carbone Scol'ère souhaitait sensibiliser les jeunes aux changements climatiques et qu'ils adoptent des comportements écoresponsables à travers un jeu en ligne disponible dans les écoles.",
 					"Le jeu permet l'apprentissage par l'enquête, en se posant des questions sur les thèmes du changement climatique, comme les gaz à effet de serre, la consommation, l'énergie et le transport, la gestion des matières résiduelles. Le joueur est plongé dans un monde d'extraterrestre constitué de cinq îles (savane, tropical, jungle, glacier, ...), dans lequel il pourra enquêter sur les GES et découvrir leur impact sur la planète.",],
