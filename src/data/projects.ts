@@ -36,101 +36,101 @@ export interface ProjectData {
 
 export const projects: ProjectData[] = [
 		//CATS
-		{
-			list: {
-				format: "portrait",
-				title: "Projet personnel",
-				description:
-					"Danser ou combattre entre chats avec des déguisements.",
-				media: {
-					type: "image",
-					src: "/projects/_CATS/CATS_0.png",
-					alt: "Une illustration d'un chat avec un chapeau de fête",
+	{
+		list: {
+			format: "portrait",
+			title: "Projet personnel",
+			description:
+				"Danser ou combattre entre chats avec des déguisements.",
+			media: {
+				type: "image",
+				src: "/projects/_CATS/CATS_0.png",
+				alt: "Une illustration d'un chat avec un chapeau de fête",
+			},
+		},
+		url: "cats",
+		hero: [
+			{
+				type: "image",
+				src: "/projects/_CATS/CATS_1.png",
+				alt: "Interface de l'écran titre",
+			},
+			{
+				type: "image",
+				src: "/projects/_CATS/CATS_2.jpg",
+				alt: "Interface de choix de chapeau",
+			},
+		],
+		title: "Cats",
+		description: [
+			"Cats est un jeu de danse et de combat qui se joue en binôme. Les joueurs choisissent le déguisement de leur chat, avant de choisir s'ils souhaitent danser sur des musiques (à la manière de just dance) ou de se combattre.",
+			"Au fur et à mesure de l'avancement les joueurs débloquent des chapeaux. J'ai réalisé les illustrations et le design d'interface. Il se joue à l'aide d'une manette.",
+		],
+		year: 2024,
+		index: 0,
+		client: "Projet personnel",
+		collab: "",
+		tags: ["Illustration", "Design UI"],
+		screenshots: [
+			{
+				left: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_CATS/CATS_3.mp4",
+							"/projects/_CATS/CATS_3.webm",
+						],
+						alt: "Vidéo du choix de chapeau",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_CATS/CATS_4.jpg",
+						alt: "Interface de choix de chanson",
+					},
 				},
 			},
-			url: "cats",
-			hero: [
-				{
-					type: "image",
-					src: "/projects/_CATS/CATS_1.png",
-					alt: "Interface de l'écran titre",
-				},
-				{
-					type: "image",
-					src: "/projects/_CATS/CATS_2.jpg",
-					alt: "Interface de choix de chapeau",
-				},
-			],
-			title: "Cats",
-			description: [
-				"Cats est un jeu de danse et de combat qui se joue en binôme. Les joueurs choisissent le déguisement de leur chat, avant de choisir s'ils souhaitent danser sur des musiques (à la manière de just dance) ou de se combattre.",
-				"Au fur et à mesure de l'avancement les joueurs débloquent des chapeaux. J'ai réalisé les illustrations et le design d'interface. Il se joue à l'aide d'une manette.",
-			],
-			year: 2024,
-			index: 0,
-			client: "Projet personnel",
-			collab: "",
-			tags: ["Illustration", "Design UI"],
-			screenshots: [
-				{
-					left: {
-						media: {
-							type: "video",
-							src: [
-								"/projects/_CATS/CATS_3.mp4",
-								"/projects/_CATS/CATS_3.webm",
-							],
-							alt: "Vidéo du choix de chapeau",
-						},
-					},
-					right: {
-						media: {
-							type: "image",
-							src: "/projects/_CATS/CATS_4.jpg",
-							alt: "Interface de choix de chanson",
-						},
+			{
+				left: {
+					media: {
+						type: "image",
+						src: "/projects/_CATS/CATS_5.jpg",
+						alt: "Illustrations avec les différents chapeaux d'un des chats",
 					},
 				},
-				{
-					left: {
-						media: {
-							type: "video",
-							src: [
-								"/projects/_CATS/CATS_5.mp4",
-								"/projects/_CATS/CATS_5.webm",
-							],
-							alt: "Vidéo d'une des danse",
-						},
-					},
-					right: {
-						media: {
-							type: "image",
-							src: "/projects/_CATS/CATS_6.jpg",
-							alt: "Interface d'une danse",
-						},
+				right: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_CATS/CATS_6.mp4",
+							"/projects/_CATS/CATS_6.webm",
+						],
+						alt: "Vidéo d'une des danse",
 					},
 				},
-				{
-					left: {
-						media: {
-							type: "video",
-							src: [
-								"/projects/_CATS/CATS_7.mp4",
-								"/projects/_CATS/CATS_7.webm",
-							],
-							alt: "Vidéo d'une combat",
-						},
-					},
-					right: {
-						media: {
-							type: "image",
-							src: "/projects/_CATS/CATS_8.jpg",
-							alt: "Interface de combat",
-						},
+			},
+			{
+				left: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_CATS/CATS_7.mp4",
+							"/projects/_CATS/CATS_7.webm",
+						],
+						alt: "Vidéo d'une combat",
 					},
 				},
-			],
-		},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_CATS/CATS_8.jpg",
+						alt: "Illustrations avec les différents chapeaux d'un des chats",
+					},
+				},
+			},
+		],
+	},
 		//PAC
 	{
 		list: {
