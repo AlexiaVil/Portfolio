@@ -35,6 +35,63 @@ export interface ProjectData {
 }
 
 export const projects: ProjectData[] = [
+		//Quiz Citoyennete
+	{
+		list: {
+			format: "landscape",
+			title: "Jeu questionnaire",
+			description:
+				"Répondre à des questions d'un faux test pour obtenir la citoyenneté.",
+			media: {
+				type: "image",
+				src: "/projects/_QuizCitoyennete/QuizCitoyennete_0.png",
+				alt: "Logo Who wants to be a canadian",
+			},
+		},
+		url: "who-wants-to-be-a-canadian",
+		hero: [
+			{
+				type: "image",
+				src: "/projects/_QuizCitoyennete/QuizCitoyennete_1.jpg",
+				alt: "Interface de l'écran titre",
+			},
+			{
+				type: "image",
+				src: "/projects/_QuizCitoyennete/QuizCitoyennete_2.jpg",
+				alt: "Interface des consignes",
+			},
+		],
+		title: "Who wants to be a canadian?",
+		description: [
+			"Ce jeu a été réalisé pour une amie à la suite de son obtention de la citoyenneté canadienne. Le but était de refaire le test de la citoyenneté qu'elle avait passé, mais avec des questions plus personnalisées et avec un design plus attractif.", 
+		],
+		year: 2024,
+		index: 0,
+		client: "Projet personnel",
+		collab: "",
+		tags: ["Design UI"],
+		screenshots: [
+			{
+				left: {
+					media: {
+						type: "video",
+						src: [
+							"/projects/_QuizCitoyennete/QuizCitoyennete_3.mp4",
+							"/projects/_QuizCitoyennete/QuizCitoyennete_3.webm",
+						],
+						alt: "Vidéo du jeu",
+					},
+				},
+				right: {
+					media: {
+						type: "image",
+						src: "/projects/_QuizCitoyennete/QuizCitoyennete_4.jpg",
+						alt: "Interface d'une des questions",
+					},
+				},
+			},
+		],
+	},
 		//CATS
 	{
 		list: {
@@ -67,7 +124,7 @@ export const projects: ProjectData[] = [
 			"Au fur et à mesure de l'avancement les joueurs débloquent des chapeaux. J'ai réalisé les illustrations et le design d'interface. Il se joue à l'aide d'une manette.",
 		],
 		year: 2024,
-		index: 0,
+		index: 1,
 		client: "Projet personnel",
 		collab: "",
 		tags: ["Illustration", "Design UI"],
@@ -165,7 +222,7 @@ export const projects: ProjectData[] = [
 			"J'ai été amenée à concevoir visuellement deux des interactifs de l'exposition, en collaborant avec la Bande à Paul pour le contenu.",
 		],
 		year: 2023,
-		index: 1,
+		index: 2,
 		client: "Pointe-à-Callière, cité d'archéologie et d'histoire de Montréal",
 		collab: "La bande à Paul (scénographie)",
 		tags: ["Exposition Interactive", "Design UI"],
@@ -267,7 +324,7 @@ export const projects: ProjectData[] = [
 			"Ainsi on peut découvrir le travail difficile et dangereux, mais important des draveurs du Québec. Les draveurs étaient des ouvriers forestiers qui contrôlaient la flottaison des billes de bois sur les rivières et les lacs du Québec.",
 		],
 		year: 2023,
-		index: 2,
+		index: 3,
 		client: "Le site historique T.E.Draper",
 		collab: "Cécile Subra (scénographe)",
 		tags: ["Exposition Interactive", "Design UI"],
@@ -344,7 +401,7 @@ export const projects: ProjectData[] = [
 					"Carbone Scol'ère souhaitait sensibiliser les jeunes aux changements climatiques et qu'ils adoptent des comportements écoresponsables à travers un jeu en ligne disponible dans les écoles.",
 					"Le jeu permet l'apprentissage par l'enquête, en se posant des questions sur les thèmes du changement climatique, comme les gaz à effet de serre, la consommation, l'énergie et le transport, la gestion des matières résiduelles. Le joueur est plongé dans un monde d'extraterrestre constitué de cinq îles (savane, tropical, jungle, glacier, ...), dans lequel il pourra enquêter sur les GES et découvrir leur impact sur la planète.",],
 				year: 2023,
-				index: 3,
+				index: 4,
 				client: "COOP FA et le programme Carbone Scol'ère",
 				collab: "",
 				tags: ["Web", "Design UI", "Illustrations"],
@@ -428,7 +485,7 @@ export const projects: ProjectData[] = [
 			"Le joueur répond à une série de questions qui l'orientent vers des formations ou des emplois qui conviendraient à son profil.",
 		],
 		year: 2022,
-		index: 4,
+		index: 5,
 		client: "Graficompétences (comité sectoriel de main d'oeuvre des communications graphique du québec - csmocgq)",
 		collab: "",
 		tags: ["Web", "Design UI"],
@@ -498,7 +555,7 @@ export const projects: ProjectData[] = [
 			"CREO a développé dix segments d'animation interactive, dans un univers coloré, mettant en avant les mesures de prudence élémentaire pour leur faire prendre conscience des conséquences. Chaque capsule est composée d'une vidéo et d'un jeu interactif qui permet aux enfants de mettre en pratique les notions de sécurité routière apprises.",
 		],
 		year: 2021,
-		index: 5,
+		index: 6,
 		client: "Société de l'assurance automobile du québec (SAAQ)",
 		collab: "",
 		tags: ["Web", "Design UI", "Graphisme"],
@@ -571,7 +628,7 @@ export const projects: ProjectData[] = [
 			"Dans un univers absurde, loufoque et coloré, les joueurs doivent parcourir les régions du Québec, à la recherche des ingrédients demandés par le chef du Kasscrout. Le jeu est composé de 15 missions incluant plus de 50 mini-jeux.",
 		],
 		year: 2020,
-		index: 6,
+		index: 7,
 		client: "L'union des producteurs agricoles (UPA)",
 		tags: ["Web", "Design UI", "Illustration", "Animation"],
 		screenshots: [
